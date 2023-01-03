@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="Professional Portfolio of Ayanna Walker" />
         <meta name="author" content="Paul Matthew & Ayanna Walker" />
-        <meta property="og:image" content="https://scontent.fyto3-1.fna.fbcdn.net/v/t39.30808-6/281639776_1600561803652886_3923111564492351067_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=e3f864&_nc_ohc=swNIGIU8WcwAX9b4wwS&_nc_ht=scontent.fyto3-1.fna&oh=00_AfDQ-RmRldXYswIlBcx9Y99iUK7mSDcFtC93VJhFfCwwWA&oe=63AA15D4"/>
+        <meta property="og:image" content="https://d1fdloi71mui9q.cloudfront.net/mxTWv7BWQRylHo32iKN1_YTzlYUdziXZQrdHE"/>
         <title>Yours.sincerely.yanna</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
@@ -18,10 +18,17 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
+
+        <!-- Intro Video-->
+        <div class="vidcontainer" style="background-color:rgb(7, 7, 7)">
+            <video autoplay muted id="introVideo">
+                <source src="/assets/img/intro-yanna.mp4" type="video/mp4">
+            </video>
+            <div id="yannatxtid" class="yannatxt text-uppercase">YANNA</div>
+        </div>
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <nav style="background-color:rgb(7, 7, 7)" class="navbar navbar-expand-lg navbar-dark" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top"><img src="assets/img/home.png" alt="..." /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
@@ -37,243 +44,238 @@
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
+                <a class="homebtn" href="#page-top"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a>
             </div>
         </nav>
-        <!-- Masthead-->
-        <header class="masthead">
+        <!-- About Me-->
+        <section class="scrollFade fade-bottom" class="page-section bg-light" id="aboutme">
             <div class="container">
-                <div class="masthead-subheading"><span>Yours.sincerely.yanna</span></div>
-                <div class="masthead-heading text-uppercase">everything YANNA</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#aboutme">About Me</a>
-            </div>
-        </header>
-                <!-- About Me-->
-                <section class="page-section bg-light" id="aboutme">
-                    <div class="container">
-                        <div class="text-center">
-                            <h2 class="section-heading text-uppercase">About Me</h2>
-                            <h3 class="section-subheading text-muted">Yours.sincerely.yanna</h3>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="team-member">
-                                    <img class="mx-auto rounded-circle" src="assets/img/team/avatar.png" alt="..." />
-                                    <h4>Ayanna Walker</h4>
-                                    <p class="text-muted">Fitness, Blogging, Writing</p>
-                                    <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/yours.sincerely.yanna/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                                    <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/yours.sincerely.yanna" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-dark btn-social mx-2" href="https://www.youtube.com/@YoursSincerelyYanna" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-youtube"></i></a>
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">About Me</h2>
+                    <h6 class="section-subheading text-muted">Yours.sincerely.yanna</h6>
+                </div>
+                <div class="aboutmecont row">
+                    <div class="aboutmecont2 col-lg-12">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img class="mx-auto rounded-circle avatar" src="assets/img/team/avatar3.jpg" alt="..." />
+                                </div>
+                                <div class="flip-card-back">
+                                    <img class="mx-auto rounded-circle avatar" src="assets/img/team/avatar.png" alt="..." />
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Hey there! A little about me, I'm a fitness enthusiast, writer and blogger.  Feel free to browse to find out more....</p></div>
-                        </div>
+                        <h4>Ayanna Walker</h4>
+                        <p class="text-muted">Fitness, Blogging, Writing</p>
+                        <a class="btn btn-dark btn-social mx-2 scrollFade fade-left href="https://www.instagram.com/yours.sincerely.yanna/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a class="btn btn-dark btn-social mx-2 scrollFade fade-bottom" href="https://www.facebook.com/yours.sincerely.yanna" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2 scrollFade fade-right" href="https://www.youtube.com/@YoursSincerelyYanna" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-youtube"></i></a>
                     </div>
-                </section>
-        
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Hey there! A little about me, I'm a fitness enthusiast, writer and blogger.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet tortor a quam elementum iaculis. In hac habitasse platea dictumst. Integer volutpat fringilla semper. </p></div>
+                </div>
+            </div>
+        </section> 
         <!-- Portfolio-->
-        <section class="page-section" id="portfolio">
+        <section class="scrollFade fade-bottom" class="page-section" id="portfolio">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">xxx</h3>
+                    <h6 class="section-subheading text-muted">xxx</h6>
                 </div>
                 <div class="row text-center">
                     <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <img class="covers rounded-circle text-primary" src="assets/img/fitness-cover2.jpeg" alt="..." />
-                        </span>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front port-front">
+                                    <span class="fa-stack fa-4x">
+                                        <img class="covers rounded-circle text-primary scrollFade fade-left" src="assets/img/fitness-cover2.jpeg" alt="..." />
+                                    </span>
+                                </div>
+                                <div class="flip-card-back port-back">
+                                    <img class="mx-auto rounded-circle avatar" src="assets/img/portfolio/fitness2.gif" alt="..." />
+                                </div>
+                            </div>
+                        </div>
                         <h4 class="my-3">Fitness</h4>
-                        <p class="text-muted">xx</p>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet tortor a quam elementum iaculis. In hac habitasse platea dictumst. Integer volutpat fringilla semper. Nulla libero nunc, auctor vel ullamcorper a, porta ac elit. </p>
                     </div>
                     <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <img class="covers rounded-circle text-primary" src="assets/img/blog-cover2.jpeg" alt="..." />
-                        </span>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front port-front">
+                                    <span class="fa-stack fa-4x">
+                                        <img class="covers rounded-circle text-primary scrollFade" src="assets/img/blog-cover2.jpeg" alt="..." />
+                                    </span>
+                                </div>
+                                <div class="flip-card-back port-back">
+                                    <img class="mx-auto rounded-circle avatar" src="assets/img/portfolio/blog.gif" alt="..." />
+                                </div>
+                            </div>
+                        </div>
                         <h4 class="my-3">Blog</h4>
-                        <p class="text-muted">xx</p>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet tortor a quam elementum iaculis. In hac habitasse platea dictumst. Integer volutpat fringilla semper. Nulla libero nunc, auctor vel ullamcorper a, porta ac elit. </p>
                     </div>
                     <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <img class="covers rounded-circle text-primary" src="assets/img/writing-cover3.jpeg" alt="..." />
-                        </span>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front port-front">
+                                    <span class="fa-stack fa-4x">
+                                        <img class="covers rounded-circle text-primary scrollFade fade-right" src="assets/img/writing-cover3.jpeg" alt="..." />
+                                    </span>
+                                </div>
+                                <div class="flip-card-back port-back">
+                                    <img class="mx-auto rounded-circle avatar" src="assets/img/portfolio/writing-ex2.gif" alt="..." />
+                                </div>
+                            </div>
+                        </div>
                         <h4 class="my-3">Writing</h4>
-                        <p class="text-muted">xx</p>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet tortor a quam elementum iaculis. In hac habitasse platea dictumst. Integer volutpat fringilla semper. Nulla libero nunc, auctor vel ullamcorper a, porta ac elit. </p>
                     </div>
                 </div>
             </div>
         </section>
-                <!-- Fitness Grid-->
-                <section class="page-section bg-light" id="fitness">
-                    <div class="container">
-                        <div class="text-center">
-                            <h2 class="section-heading text-uppercase">Fitness</h2>
-                            <h3 class="section-subheading text-muted">xx</h3>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                                <!-- Fitness item 1-->
-                                <div class="portfolio-item">
-                                    <a class="portfolio-link" data-bs-toggle="modal" href="#fitnessModal1">
-                                        <div class="portfolio-hover">
-                                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                        </div>
-                                        <img class="img-fluid" src="assets/img/portfolio/yannafit.jpg" alt="..." />
-                                    </a>
-                                    <div class="portfolio-caption">
-                                        <div class="portfolio-caption-heading">Meal Prep</div>
-                                        <div class="portfolio-caption-subheading text-muted">Nutrition</div>
-                                    </div>
+        <!-- Fitness Grid-->
+        <section class="scrollFade fade-bottom" class="page-section bg-light" id="fitness">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Fitness</h2>
+                    <h6 class="section-subheading text-muted">In hac habitasse platea dictumst.</h6>
+                </div>
+                <div class="row">
+                    <div class="icon-card col-lg-6 col-sm-12 mb-4 mb-lg-0">
+                        <!-- Fitness item 1-->
+                        <div class="portfolio-item scrollFade fade-right">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#fitnessModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i style="color:goldenrod; border-style:solid; background-color: white;" class="fas fa-plus-circle fa-1x"></i></div>
                                 </div>
+                                <img class="img-fluid" src="assets/img/portfolio/yannafit.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption" style="background-color:goldenrod">
+                                <div class="portfolio-caption-heading"><b>Fitness Channel</b></div>
+                                <div class="portfolio-caption-subheading">@TheFitLifeWithYanna</div>
+                                <a class="btn btn-dark btn-social" href="https://www.youtube.com/c/TheFitLifeWithYanna" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
                             </div>
-                            <div class="col-lg-4 col-sm-6 mb-4">
-                                <!-- Fitness item 2-->
-                                <div class="portfolio-item">
-                                    <a class="portfolio-link" data-bs-toggle="modal" href="#fitnessModal2">
-                                        <div class="portfolio-hover">
-                                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                        </div>
-                                        <img class="img-fluid" src="assets/img/portfolio/cardio.jpg" alt="..." />
-                                    </a>
-                                    <div class="portfolio-caption">
-                                        <div class="portfolio-caption-heading">HIIT</div>
-                                        <div class="portfolio-caption-subheading text-muted">Cardio</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6 mb-4">
-                                <!-- Fitness item 3-->
-                                <div class="portfolio-item">
-                                    <a class="portfolio-link" data-bs-toggle="modal" href="#fitnessModal3">
-                                        <div class="portfolio-hover">
-                                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                        </div>
-                                        <img class="img-fluid" src="assets/img/portfolio/yanna-abs2.jpg" alt="..." />
-                                    </a>
-                                    <div class="portfolio-caption">
-                                        <div class="portfolio-caption-heading">Glutes</div>
-                                        <div class="portfolio-caption-subheading text-muted">Home Workouts</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
                         </div>
                     </div>
-                </section>
-        
+                    <div class="icon-card col-lg-6 col-sm-12 mb-4 mb-lg-0">
+                        <!-- Fitness item 2-->
+                        <div class="portfolio-item scrollFade fade-left">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#fitnessModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i style="color:goldenrod; border-style:solid; background-color: white;" class="fas fa-plus-circle fa-1x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/cardio2.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption" style="background-color:goldenrod">
+                                <div class="portfolio-caption-heading"><b>Fitness Programs</b></div>
+                                <div class="portfolio-caption-subheading">Home and Gym Workouts</div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
         <!-- Blog Grid-->
-        <section class="page-section" id="blog">
+        <section class="scrollFade fade-bottom" class="page-section" id="blog">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Blog</h2>
-                    <h3 class="section-subheading text-muted">xx</h3>
+                    <h6 class="section-subheading text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h6>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="icon-card col-lg-6 col-sm-12 mb-4">
                         <!-- Blog item 1-->
-                        <div class="portfolio-item">
+                        <div class="portfolio-item scrollFade fade-right">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#blogModal1">
                                 <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    <div class="portfolio-hover-content"><i style="color:goldenrod; border-style:solid; background-color: white;" class="fas fa-plus-circle fa-1x"></i></div>
                                 </div>
                                 <img class="img-fluid" src="assets/img/blog/yanna-outdoors.jpg" alt="..." />
                             </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">London Town</div>
-                                <div class="portfolio-caption-subheading text-muted">City Life</div>
+                            <div class="portfolio-caption" style="background-color:goldenrod">
+                                <div class="portfolio-caption-heading"><b>Latest Blog</b></div>
+                                <div class="portfolio-caption-subheading text-muted">xx</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Blog item 2-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#blogModal2">
+                    <div class="icon-card col-lg-6 col-sm-12 mb-4">
+                        <!-- Blog item 3-->
+                        <div class="portfolio-item scrollFade fade-left">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#blogModal3">
                                 <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    <div class="portfolio-hover-content"><i style="color:goldenrod; border-style:solid; background-color: white;" class="fas fa-plus-circle fa-1x"></i></div>
                                 </div>
                                 <img class="img-fluid" src="assets/img/blog/yanna-overalls.jpg" alt="..." />
                             </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Street Wear</div>
-                                <div class="portfolio-caption-subheading text-muted">Fashion</div>
+                            <div class="portfolio-caption" style="background-color:goldenrod">
+                                <div class="portfolio-caption-heading"><b>All Blog Posts</b></div>
+                                <div class="portfolio-caption-subheading text-muted">Photography, Gaming, Movie Reviews and all things entertainment</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Blog item 3-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#blogModal3">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/blog/yanna-forest.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Nature</div>
-                                <div class="portfolio-caption-subheading text-muted">Photography</div>
-                            </div>
-                        </div>
-                    </div>
-
-                  
-                <!-- Writings Grid-->
-                <section class="page-section bg-light" id="writings">
+                </div>
+            </div>
+        </section>   
+        <!-- Writings Grid-->
+        <section class="scrollFade fade-bottom"class="page-section bg-light" id="writings">
                     <div class="container">
                         <div class="text-center">
                             <h2 class="section-heading text-uppercase">Writing</h2>
-                            <h3 class="section-subheading text-muted">xx</h3>
+                            <h6 class="section-subheading text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
                         </div>
                         <div class="row">
-                            <div class="col-lg-4 col-sm-6 mb-4">
+                            <div class="icon-card col-lg-6 col-sm-6 mb-4">
                                 <!-- Writing item 1-->
-                                <div class="portfolio-item">
+                                <div class="portfolio-item scrollFade fade-right">
                                     <a class="portfolio-link" data-bs-toggle="modal" href="#writingModal1">
                                         <div class="portfolio-hover">
-                                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                            <div class="portfolio-hover-content"><i style="color:goldenrod; border-style:solid; background-color: white;" class="fas fa-plus-circle fa-1x"></i></div>
                                         </div>
-                                        <img class="img-fluid" src="assets/img/writing/brokenforapurpose.jpg" alt="..." />
+                                        <img class="img-fluid" src="assets/img/writing/brokenforapurpose2.jpg" alt="..." />
                                     </a>
-                                    <div class="portfolio-caption">
-                                        <div class="portfolio-caption-heading">Broken For a Purpose</div>
+                                    <div class="portfolio-caption" style="background-color:goldenrod">
+                                        <div class="portfolio-caption-heading"><b>Broken For a Purpose</b></div>
                                         <div class="portfolio-caption-subheading text-muted">Day Dreams</div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-sm-6 mb-4">
+                            <div class="icon-card col-lg-6 col-sm-6 mb-4">
                                 <!-- Writing item 2-->
-                                <div class="portfolio-item">
+                                <div class="portfolio-item scrollFade">
                                     <a class="portfolio-link" data-bs-toggle="modal" href="#writingModal2">
                                         <div class="portfolio-hover">
-                                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                            <div class="portfolio-hover-content"><i style="color:goldenrod; border-style:solid; background-color: white;" class="fas fa-plus-circle fa-1x"></i></div>
                                         </div>
-                                        <img class="img-fluid" src="assets/img/writing/yanna-back.jpg" alt="..." />
+                                        <img class="img-fluid" src="assets/img/writing/yanna-back2.jpg" alt="..." />
                                     </a>
-                                    <div class="portfolio-caption">
-                                        <div class="portfolio-caption-heading">Passion</div>
+                                    <div class="portfolio-caption" style="background-color:goldenrod">
+                                        <div class="portfolio-caption-heading"><b>Passion</b></div>
                                         <div class="portfolio-caption-subheading text-muted">xxx</div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-sm-6 mb-4">
+                            <div class="icon-card col-lg-6 col-sm-6 mb-4">
                                 <!-- Writing item 3-->
-                                <div class="portfolio-item">
+                                <div class="portfolio-item scrollFade fade-left">
                                     <a class="portfolio-link" data-bs-toggle="modal" href="#writingModal3">
                                         <div class="portfolio-hover">
-                                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                            <div class="portfolio-hover-content"><i style="color:goldenrod; border-style:solid; background-color: white;" class="fas fa-plus-circle fa-1x"></i></div>
                                         </div>
                                         <img class="img-fluid" src="assets/img/writing/yanna-cyan.jpg" alt="..." />
                                     </a>
-                                    <div class="portfolio-caption">
-                                        <div class="portfolio-caption-heading">She knows</div>
+                                    <div class="portfolio-caption" style="background-color:goldenrod">
+                                        <div class="portfolio-caption-heading"><b>She knows</b></div>
                                         <div class="portfolio-caption-subheading text-muted">xxx</div>
                                     </div>
                                 </div>
                             </div>
                     </div>
-                </section>
+        </section>
         <!-- Upcoming-->
-        <section class="page-section bg-white" id="upcoming">
+        <section class="scrollFade fade-bottom"class="page-section bg-white" id="upcoming">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Upcoming Works</h2>
@@ -284,8 +286,8 @@
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>2009-2011</h4>
-                                <h4 class="subheading">Our Humble Beginnings</h4>
+                                <h4>In hac habitasse platea dictumst</h4>
+                                <h4 class="subheading">xx</h4>
                             </div>
                             <div class="timeline-body"><p class="text-muted">xx</p></div>
                         </div>
@@ -294,8 +296,8 @@
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>March 2011</h4>
-                                <h4 class="subheading">An Agency is Born</h4>
+                                <h4>In hac habitasse platea dictumst</h4>
+                                <h4 class="subheading">xx</h4>
                             </div>
                             <div class="timeline-body"><p class="text-muted">xx</p></div>
                         </div>
@@ -304,8 +306,8 @@
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>December 2015</h4>
-                                <h4 class="subheading">Transition to Full Service</h4>
+                                <h4>In hac habitasse platea dictumst</h4>
+                                <h4 class="subheading">xx</h4>
                             </div>
                             <div class="timeline-body"><p class="text-muted">xx</p></div>
                         </div>
@@ -314,8 +316,8 @@
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>July 2020</h4>
-                                <h4 class="subheading">Phase Two Expansion</h4>
+                                <h4>In hac habitasse platea dictumst</h4>
+                                <h4 class="subheading">xx</h4>
                             </div>
                             <div class="timeline-body"><p class="text-muted">xx</p></div>
                         </div>
@@ -325,7 +327,7 @@
                             <h4>
                                 Be Part
                                 <br />
-                                Of Our
+                                Of My
                                 <br />
                                 Story!
                             </h4>
@@ -358,7 +360,6 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Contact Me</h2>
-                    <h3 class="section-subheading text-muted">xx</h3>
                 </div>
                 <!-- * * * * * * * * * * * * * * *-->
                 <!-- * * SB Forms Contact Form * *-->
@@ -432,8 +433,10 @@
                         <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
                     </div>
                 </div>
+                <div style="padding-top:1rem">Web Design: <a href="https://paul-matthew-portfolio.netlify.app/">Paul Matthew</a>🌺 via Bootstrap</div>
             </div>
         </footer>
+        
         <!-- Fitness Modals-->
         <!-- Fitness item 4 modal popup-->
         <div class="portfolio-modal modal fade" id="fitnessModal4" tabindex="-1" role="dialog" aria-hidden="true">
@@ -480,25 +483,16 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Title</h2>
+                                    <h2 class="text-uppercase">Fitness Programs</h2>
                                     <p class="item-intro text-muted">xx</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sample-fitprogram.jpg" alt="..." />
                                     <p>Text xxx </p>
                                     <a class="btn btn-success" href="https://themewagon.github.io/training-studio/?_ga=2.104552708.585768787.1671817555-563159910.1671817554" role="button">Explore Programs</a>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            XX
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            XX
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
+                                    <div style="padding-top:2rem">
+                                        <button class="btn btn-primary btn-xl text-uppercase" type="button" style="background-color:green">
+                                            Paid Subscription
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -519,7 +513,7 @@
                                     <h2 class="text-uppercase">Title</h2>
                                     <p class="item-intro text-muted">xx</p>
                                     <div class="embed-cont">
-                                        <video class="embedvid" controls muted loop autoplay="autoplay" playsinline='playsinline' class="img-fluid d-block mx-auto" src="assets/img/portfolio/fitness.mp4" alt="..."></video>
+                                        <video class="embedvid" muted loop autoplay="autoplay" playsinline='playsinline' class="img-fluid d-block mx-auto" src="assets/img/portfolio/fitness.mp4" alt="..."></video>
                                     </div>
                                     <p>Text</p>
                                     <ul class="list-inline">
@@ -554,26 +548,14 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Fitness Channel</h2>
-                                    <p class="item-intro text-muted">xx</p>
+                                    <p class="item-intro text-muted">@TheFitLifeWithYanna</p>
                                     <div class="youtube-cont">
                                         <iframe class="youtubevid" src="https://www.youtube.com/embed/D2W6_rSf4ks?controls=0?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
-                                    <p>Text xx</p>
-                                    <a class="btn btn-dark btn-social mx-2" href="https://www.youtube.com/c/TheFitLifeWithYanna" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Lines
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Branding
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
+                                    <p>Latest upload</p>
+                                    <p>Click below to subscribe</p>
+                                    <script src="https://apis.google.com/js/platform.js"></script>
+                                    <div class="g-ytsubscribe" style="margin:auto" data-channelid="UCHeLR1cf7QILuLa3mDggN1Q" data-layout="default" data-count="default"></div>
                                 </div>
                             </div>
                         </div>
@@ -663,25 +645,11 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">London Town</h2>
+                                    <h2 class="text-uppercase">Latest Blog</h2>
                                     <p class="item-intro text-muted">xx</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/blog/yanna-hood.jpg" alt="..." />
-                                    <p>xx</p>
-                                    <a class="btn btn-success" href="https://startbootstrap.github.io/startbootstrap-clean-blog-jekyll/2020/01/31/man-must-explore.html" role="button">See Post</a>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Threads
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Illustration
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
+                                    <p>..Insert Snippet of Blog..</p>
+                                    <a class="btn btn-success" href="https://startbootstrap.github.io/startbootstrap-clean-blog-jekyll/2020/01/31/man-must-explore.html" role="button">See Full Post</a>
                                 </div>
                             </div>
                         </div>
@@ -689,7 +657,7 @@
                 </div>
             </div>
         </div>
-        <!-- Blog item 2 modal popup-->
+        <!-- Blog item 2 modal popup NOT IN USE-->
         <div class="portfolio-modal modal fade" id="blogModal2" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -734,9 +702,9 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Natural Blog</h2>
+                                    <h2 class="text-uppercase">All My Blogs</h2>
                                     <p class="item-intro text-muted">xx</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/blog/redhair.jpg" alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/blog/yanna-overalls2.jpg" alt="..." />
                                     <p>xx</p>
                                     <a class="btn btn-success" href="https://startbootstrap.github.io/startbootstrap-clean-blog-jekyll/" role="button">See Full Blog</a>
                                     <ul class="list-inline">
@@ -751,7 +719,7 @@
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
-                                        Close Project
+                                        Close
                                     </button>
                                 </div>
                             </div>
@@ -760,7 +728,6 @@
                 </div>
             </div>
         </div>
-
 
         <!-- Writing Modals-->
         <!-- Writing item 1 modal popup-->
@@ -777,7 +744,7 @@
                                     <p class="item-intro text-muted">by Ayanna Walker</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/writing/yanna-artist.jpg" alt="..." />
                                     <p>Everyone encounters obstacles in day to day life, things that can break a person and cripple them mentally, physically and emotionally. This book was written to reach every broken soul struggling to find a purpose to their pain. This is for everyone who needs some motivation, some reassurance that although storms may come and life may fling you from pillar to post, you are fully equipped to weather the storm and become a better person because of it. The author shares her experiences hoping that those experiences will speak to someone who needs to know that every struggle in life happens for a reason. The goal is to use words to resonate in some way in the life of someone who needs to know they are not alone, to know that they are not fighting a losing battle.</p>
-                                    <div class="col-lg-4 my-3 my-lg-0">
+                                    <div class="col-lg-12 my-3 my-lg-0">
                                         <a class="btn btn-dark btn-social mx-2" href="https://www.amazon.com/BROKEN-PURPOSE-Ayanna-Walker-ebook/dp/B00MI4ZPC4?ref_=ast_sto_dp" aria-label="Amazon"><i class="fab fa-amazon"></i></a>
                                     </div>
                                     <ul class="list-inline">
@@ -792,7 +759,7 @@
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
-                                        Close Project
+                                        Close
                                     </button>
                                 </div>
                             </div>
@@ -811,9 +778,9 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <h2 class="text-uppercase">Writing Entry</h2>
                                     <p class="item-intro text-muted">xx</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/writing/yanna-down.jpg" alt="..." />
                                     <p>xx</p>
                                     <ul class="list-inline">
                                         <li>
@@ -827,7 +794,7 @@
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
-                                        Close Project
+                                        Close
                                     </button>
                                 </div>
                             </div>
@@ -836,6 +803,43 @@
                 </div>
             </div>
         </div>
+
+        <!-- Writing item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="writingModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Writing Entry</h2>
+                                    <p class="item-intro text-muted">xx</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/writing/yanna-chair.jpg" alt="..." />
+                                    <p>xx</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Explore
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Graphic Design
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
 
         <!-- Bootstrap core JS-->
@@ -847,5 +851,6 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script src="js/scrollfade-0.1.js"></script>
     </body>
 </html>

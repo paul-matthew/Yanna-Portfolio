@@ -52,3 +52,18 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+//'YANNA' text over video - synchronization
+let video = document.getElementById("introVideo");
+let logo = document.getElementById("yannatxtid");
+
+video.addEventListener('play', (event) => {
+   logo.classList.toggle('logo-animation');
+   console.log("AH YO start")
+});
+
+video.addEventListener('ended', (event) => {
+   logo.classList.toggle('logo-animation');
+   console.log("AH YO end");
+   setTimeout (function(){video.play();},1000);
+});

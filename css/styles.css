@@ -11818,14 +11818,12 @@ p {
   height:200px;
   width:200px;
   margin:auto;
-  z-index:1;
 }
 
 .flip-card {
   height:200px;
   width:200px;
   margin:auto;
-  z-index:1;
 }
 
 /*Alternative Code -coin flip on hover*/
@@ -11855,13 +11853,13 @@ p {
   }
   60% {
     transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg);
   }
 }
 
 .flip-card-front, .flip-card-back {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  z-index:1;
 }
 
 .flip-card-back {
@@ -12021,30 +12019,36 @@ section#contact form#contactForm :-ms-input-placeholder {
 @keyframes fade-bottom {
   0% {
     transform: translateY(100px);
+    -webkit-transform: translateY(100px);
     opacity: 0;
   }
   100% {
     transform: translateY(0);
+    -webkit-transform: translateY(0);
     opacity: 1;
   }
 }
 @keyframes fade-left {
   0% {
     transform: translateX(-300px);
+    -webkit-transform: translateX(-300px);
     opacity: 0;
   }
   100% {
     transform: translateX(0);
+    -webkit-transform:translateX(0);
     opacity: 1;
   }
 }
 @keyframes fade-right {
   0% {
     transform: translateX(100px);
+    -webkit-transform: translateX(100px);
     opacity: 0;
   }
   100% {
     transform: translateX(0);
+    -webkit-transform: translateX(0);
     opacity: 1;
   }
 }

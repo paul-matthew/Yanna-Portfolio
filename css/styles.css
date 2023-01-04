@@ -11852,8 +11852,8 @@ p {
     
   }
   60% {
-    transform: rotateY(180deg);
-    -webkit-transform:rotateY(180deg);
+    transform: rotateY(179deg);
+    -webkit-transform:rotateY(179deg);
   }
 }
 

@@ -11437,12 +11437,6 @@ p {
   background-size: cover;
 }
 
-@media (max-width:672px){
-  .vidcontainer{
-    background-image: url('../assets/img/yanna-mountain1.jpg');
-  }
-}
-
 .yannatxt {
   font-size: 25vw;
   font-weight: 700;
@@ -11455,38 +11449,68 @@ p {
   right:0px;
   display:none;
 }
-
+@media (max-width: 670px) {
 .logo-animation{
   display:block;
   animation-name:slideIn;
-  animation-duration: 27.31s;
+  animation-duration: 34s;
   animation-iteration-count: infinite;
 }
-
 @keyframes slideIn{
   0% {
     transform:scaleX(0);
   }
-  3% {
+  6% {
+    transform:scaleX(0);
+  }
+  8% {
     transform:scaleX(1);
   }
-  55% {
+  70% {
     opacity:1;
   }
-  60% {
+  75% {
     opacity:0;
   }
   100% {
     opacity:0;
   }
 }
+}
+@media (min-width: 670px) {
+  .logo-animation{
+    display:block;
+    animation-name:slideIn;
+    animation-duration: 27.31s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes slideIn{
+    0% {
+      transform:scaleX(0);
+    }
+    3% {
+      transform:scaleX(1);
+    }
+    55% {
+      opacity:1;
+    }
+    60% {
+      opacity:0;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  }
+
+
 
 @media (max-width: 670px) {
   .yannatxt {
     position:absolute;
     line-height: 4.5rem;
     margin-bottom: 4rem;
-    top:45vh;
+    top:85vh;
     margin:0px;
     left:0px;
     right:0px;
@@ -12024,13 +12048,22 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 /*STYLE FOR COVER VIDEO*/
 
+/*Video selection depending on size of screen*/
+#introVideo2{display:none;}
+
+@media only screen and (max-width:671px){
+  #introVideo2{display:block;}
+  #introVideo{display:none;}
+}
+
 /* Style the video: 100% width and height to cover the entire window */
 @media (max-width:671px){
-  #introVideo {
+  #introVideo2 {
     right: 0;
     bottom: 0;
     width: 100vw;
     height:100vh;
+    overflow:hidden;
   }
   }
 

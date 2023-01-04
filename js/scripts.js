@@ -67,3 +67,17 @@ video.addEventListener('ended', (event) => {
    console.log("AH YO end");
    setTimeout (function(){video.play();},2000);
 });
+
+//For the mobile version video
+let video2 = document.getElementById("introVideo2");
+
+video2.addEventListener('play', (event) => {
+    logo.classList.toggle('logo-animation');
+    console.log("AH YO start")
+ });
+ 
+ video2.addEventListener('ended', (event) => {
+    logo.classList.toggle('logo-animation');
+    console.log("AH YO end");
+    setTimeout (function(){video2.play();},2000);
+ });

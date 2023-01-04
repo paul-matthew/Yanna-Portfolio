@@ -20,7 +20,7 @@
     <body id="page-top">
 
         <!-- Intro Video-->
-        <div class="vidcontainer" style="background-color:rgb(7, 7, 7)">
+        <div class="vidcontainer" style="background-color:rgb(7, 7, 7); ">
             <video autoplay muted id="introVideo">
                 <source src="assets/img/intro-yanna.mp4" type="video/mp4">
             </video>
@@ -79,7 +79,7 @@
             </div>
         </section> 
         <!-- Portfolio-->
-        <section class="scrollFade fade-bottom" class="page-section" id="portfolio">
+        <section class="scrollFade fade-bottom" class="page-section" id="portfolio" style="background-color:rgb(235, 229, 229)">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Portfolio</h2>
@@ -88,7 +88,7 @@
                 <div class="row text-center">
                     <div class="col-md-4">
                         <div class="flip-card">
-                            <div class="flip-card-inner">
+                            <div class="flip-card-inner" id="card1">
                                 <div class="flip-card-front port-front">
                                     <span class="fa-stack fa-4x">
                                         <img class="covers rounded-circle text-primary scrollFade fade-left" src="assets/img/fitness-cover2.jpeg" alt="..." />
@@ -104,7 +104,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="flip-card">
-                            <div class="flip-card-inner">
+                            <div class="flip-card-inner" id="card2">
                                 <div class="flip-card-front port-front">
                                     <span class="fa-stack fa-4x">
                                         <img class="covers rounded-circle text-primary scrollFade" src="assets/img/blog-cover2.jpeg" alt="..." />
@@ -120,7 +120,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="flip-card">
-                            <div class="flip-card-inner">
+                            <div class="flip-card-inner" id="card3">
                                 <div class="flip-card-front port-front">
                                     <span class="fa-stack fa-4x">
                                         <img class="covers rounded-circle text-primary scrollFade fade-right" src="assets/img/writing-cover3.jpeg" alt="..." />
@@ -142,12 +142,12 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Fitness</h2>
-                    <h6 class="section-subheading text-muted">In hac habitasse platea dictumst.</h6>
+                    <h6 class="section-subheading text-muted">@TheFitLifeWithYanna</h6>
                 </div>
                 <div class="row">
                     <div class="icon-card col-lg-6 col-sm-12 mb-4 mb-lg-0">
                         <!-- Fitness item 1-->
-                        <div class="portfolio-item scrollFade fade-right">
+                        <div style="overflow:hidden"class="portfolio-item scrollFade fade-right"> <!--Overflow:hidden used for the picture hover zoom in effect-->
                             <a class="portfolio-link" data-bs-toggle="modal" href="#fitnessModal1">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i style="color:goldenrod; border-style:solid; background-color: white;" class="fas fa-plus-circle fa-1x"></i></div>
@@ -156,14 +156,13 @@
                             </a>
                             <div class="portfolio-caption" style="background-color:goldenrod">
                                 <div class="portfolio-caption-heading"><b>Fitness Channel</b></div>
-                                <div class="portfolio-caption-subheading">@TheFitLifeWithYanna</div>
                                 <a class="btn btn-dark btn-social" href="https://www.youtube.com/c/TheFitLifeWithYanna" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="icon-card col-lg-6 col-sm-12 mb-4 mb-lg-0">
                         <!-- Fitness item 2-->
-                        <div class="portfolio-item scrollFade fade-left">
+                        <div style="overflow:hidden" id="cardalter" class="portfolio-item scrollFade fade-left">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#fitnessModal2">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i style="color:goldenrod; border-style:solid; background-color: white;" class="fas fa-plus-circle fa-1x"></i></div>
@@ -179,7 +178,7 @@
             </div>
         </section>
         <!-- Blog Grid-->
-        <section class="scrollFade fade-bottom" class="page-section" id="blog">
+        <section class="scrollFade fade-bottom" class="page-section" id="blog" style="background-color:rgb(235, 229, 229)">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Blog</h2>
@@ -188,7 +187,7 @@
                 <div class="row">
                     <div class="icon-card col-lg-6 col-sm-12 mb-4">
                         <!-- Blog item 1-->
-                        <div class="portfolio-item scrollFade fade-right">
+                        <div style="overflow:hidden" class="portfolio-item scrollFade fade-right">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#blogModal1">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i style="color:goldenrod; border-style:solid; background-color: white;" class="fas fa-plus-circle fa-1x"></i></div>
@@ -203,7 +202,7 @@
                     </div>
                     <div class="icon-card col-lg-6 col-sm-12 mb-4">
                         <!-- Blog item 3-->
-                        <div class="portfolio-item scrollFade fade-left">
+                        <div style="overflow:hidden" id="cardalter" class="portfolio-item scrollFade fade-left">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#blogModal3">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i style="color:goldenrod; border-style:solid; background-color: white;" class="fas fa-plus-circle fa-1x"></i></div>
@@ -212,7 +211,7 @@
                             </a>
                             <div class="portfolio-caption" style="background-color:goldenrod">
                                 <div class="portfolio-caption-heading"><b>All Blog Posts</b></div>
-                                <div class="portfolio-caption-subheading text-muted">Photography, Gaming, Movie Reviews and all things entertainment</div>
+                                <div class="portfolio-caption-subheading text-muted">Gaming, Movie Reviews and all things entertainment</div>
                             </div>
                         </div>
                     </div>
@@ -229,7 +228,7 @@
                         <div class="row">
                             <div class="icon-card col-lg-6 col-sm-6 mb-4">
                                 <!-- Writing item 1-->
-                                <div class="portfolio-item scrollFade fade-right">
+                                <div style="overflow:hidden" class="portfolio-item scrollFade fade-right">
                                     <a class="portfolio-link" data-bs-toggle="modal" href="#writingModal1">
                                         <div class="portfolio-hover">
                                             <div class="portfolio-hover-content"><i style="color:goldenrod; border-style:solid; background-color: white;" class="fas fa-plus-circle fa-1x"></i></div>
@@ -244,7 +243,7 @@
                             </div>
                             <div class="icon-card col-lg-6 col-sm-6 mb-4">
                                 <!-- Writing item 2-->
-                                <div class="portfolio-item scrollFade">
+                                <div style="overflow:hidden" id="cardalter" class="portfolio-item scrollFade">
                                     <a class="portfolio-link" data-bs-toggle="modal" href="#writingModal2">
                                         <div class="portfolio-hover">
                                             <div class="portfolio-hover-content"><i style="color:goldenrod; border-style:solid; background-color: white;" class="fas fa-plus-circle fa-1x"></i></div>
@@ -259,7 +258,7 @@
                             </div>
                             <div class="icon-card col-lg-6 col-sm-6 mb-4">
                                 <!-- Writing item 3-->
-                                <div class="portfolio-item scrollFade fade-left">
+                                <div style="overflow:hidden" class="portfolio-item scrollFade fade-left">
                                     <a class="portfolio-link" data-bs-toggle="modal" href="#writingModal3">
                                         <div class="portfolio-hover">
                                             <div class="portfolio-hover-content"><i style="color:goldenrod; border-style:solid; background-color: white;" class="fas fa-plus-circle fa-1x"></i></div>
@@ -275,7 +274,7 @@
                     </div>
         </section>
         <!-- Upcoming-->
-        <section class="scrollFade fade-bottom"class="page-section bg-white" id="upcoming">
+        <section class="scrollFade fade-bottom"class="page-section bg-white" id="upcoming" style="background-color:rgb(235, 229, 229)">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Upcoming Works</h2>
@@ -490,7 +489,7 @@
                                     <a class="btn btn-success" href="https://themewagon.github.io/training-studio/?_ga=2.104552708.585768787.1671817555-563159910.1671817554" role="button">Explore Programs</a>
                                     <div style="padding-top:2rem">
                                         <button class="btn btn-primary btn-xl text-uppercase" type="button" style="background-color:green">
-                                            Paid Subscription
+                                            Sign Up Today
                                         </button>
                                     </div>
                                 </div>
@@ -555,7 +554,7 @@
                                     <p>Latest upload</p>
                                     <p>Click below to subscribe</p>
                                     <script src="https://apis.google.com/js/platform.js"></script>
-                                    <div class="g-ytsubscribe" style="margin:auto" data-channelid="UCHeLR1cf7QILuLa3mDggN1Q" data-layout="default" data-count="default"></div>
+                                    <div style="margin:auto" class="g-ytsubscribe" data-channelid="UCHeLR1cf7QILuLa3mDggN1Q" data-layout="default" data-count="default"></div>
                                 </div>
                             </div>
                         </div>
@@ -649,7 +648,7 @@
                                     <p class="item-intro text-muted">xx</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/blog/yanna-hood.jpg" alt="..." />
                                     <p>..Insert Snippet of Blog..</p>
-                                    <a class="btn btn-success" href="https://startbootstrap.github.io/startbootstrap-clean-blog-jekyll/2020/01/31/man-must-explore.html" role="button">See Full Post</a>
+                                    <a class="btn btn-success" href="http://saddleandsuede.weebly.com/blog/music-monday-ryan-bingham" role="button">See Full Post</a>
                                 </div>
                             </div>
                         </div>
@@ -706,7 +705,7 @@
                                     <p class="item-intro text-muted">xx</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/blog/yanna-overalls2.jpg" alt="..." />
                                     <p>xx</p>
-                                    <a class="btn btn-success" href="https://startbootstrap.github.io/startbootstrap-clean-blog-jekyll/" role="button">See Full Blog</a>
+                                    <a class="btn btn-success" href="http://saddleandsuede.weebly.com/" role="button">See Full Blog</a>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Client:</strong>

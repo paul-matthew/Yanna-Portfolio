@@ -525,6 +525,13 @@ progress {
     font-size: 4rem;
   }
 }
+@media(max-width:991px){
+.homebtn{
+  position:absolute;
+  top:15px;
+  right:5px;
+}
+}
 
 @media (min-width: 992px) {
   .homebtn{
@@ -607,6 +614,7 @@ progress {
 
 .img-fluid {
   max-width: 100%;
+  width:auto;
   height: auto;
   max-height: 390px;
 }
@@ -11429,6 +11437,12 @@ p {
   background-size: cover;
 }
 
+@media (max-width:672px){
+  .vidcontainer{
+    background-image: url('../assets/img/yanna-mountain1.jpg');
+  }
+}
+
 .yannatxt {
   font-size: 25vw;
   font-weight: 700;
@@ -11437,7 +11451,6 @@ p {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color:yellow;
   position:absolute;
-  top:200px;
   left:0px;
   right:0px;
   display:none;
@@ -11446,7 +11459,7 @@ p {
 .logo-animation{
   display:block;
   animation-name:slideIn;
-  animation-duration: 26.31s;
+  animation-duration: 27.31s;
   animation-iteration-count: infinite;
 }
 
@@ -11468,19 +11481,36 @@ p {
   }
 }
 
-@media (min-width: 768px) {
-
+@media (max-width: 670px) {
   .yannatxt {
-    font-weight: 700;
+    position:absolute;
     line-height: 4.5rem;
     margin-bottom: 4rem;
-    position:absolute;
-    top:300px;
+    top:45vh;
+    margin:0px;
     left:0px;
     right:0px;
   }
-
 }
+
+@media (min-width: 670px) {
+
+  .yannatxt {
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+    top:300px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .yannatxt {
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+    top:300px;
+  }
+}
+
 #portfolio .portfolio-item {
   max-width: 26rem;
   margin-left: auto;
@@ -11508,6 +11538,7 @@ p {
 }
 .portfolio-hover-content{
   position:absolute;
+  z-index:1;
 }
 
 #portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
@@ -11532,7 +11563,7 @@ p {
 
 .portfolio-caption{
   text-align: center;
-  height:100px;
+  height:125px;
 }
 
 .portfolio-modal .modal-dialog {
@@ -11771,9 +11802,34 @@ p {
   margin:auto;
 }
 
-
-.flip-card:hover .flip-card-inner {
+/*Alternative Code -coin flip on hover*/
+/*.flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
+}*/
+
+/*Alternative Code -timed animation*/
+.flip-card-inner{
+  animation-name:coinFlip;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+#card1{
+  animation-delay:3s;
+}
+#card2{
+  animation-delay:4.5s;
+}
+#card3{
+  animation-delay:6s;
+}
+
+@keyframes coinFlip {
+  0% {
+    
+  }
+  60% {
+    transform: rotateY(180deg);
+  }
 }
 
 .flip-card-front, .flip-card-back {
@@ -11802,11 +11858,22 @@ p {
   height: 2.75rem;
 }
 
+@media (max-width:1200px){
+  section#contact {
+    background-color: white;
+    background-image: url("../assets/img/yanna-contact.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  }
+
+@media (min-width:1200px){
 section#contact {
   background-color: #212529;
   background-image: url("../assets/img/yanna-banner.jpg");
   background-repeat: no-repeat;
   background-position: center;
+}
 }
 section#contact .section-heading {
   color: #fff;
@@ -11958,17 +12025,32 @@ section#contact form#contactForm :-ms-input-placeholder {
 /*STYLE FOR COVER VIDEO*/
 
 /* Style the video: 100% width and height to cover the entire window */
-#introVideo {
-  right: 0;
-  bottom: 0;
-  width: 100%;
-}
+@media (max-width:671px){
+  #introVideo {
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height:100vh;
+  }
+  }
+
+  @media (min-width:672px){
+    #introVideo {
+      right: 0;
+      bottom: 0;
+      width: 100%;
+    }
+    }
 
 /*Style to make the card icons centered*/
 @media (max-width: 992px){
   .portfolio-item{
-    margin:auto !important;
+    /*margin:auto !important;*/
     width:50% !important;
+  }
+  #cardalter{
+    margin-left:auto;
+    margin-right:0px;
   }
 }
 @media (min-width: 992px){
@@ -11978,3 +12060,20 @@ section#contact form#contactForm :-ms-input-placeholder {
 
   }
 }
+
+/*Styling for the Card on Hover Zoom*/
+.icon-card img{
+  transition: transform .5s; /* Animation */
+}
+
+.icon-card img:hover {
+  transform: scale(1.1); /* (150% zoom) */
+}
+
+/*Background Image for Fitness Section*/
+/*
+#fitness{
+  background-image:url('/assets/img/portfolio/fitness-jack-ex.gif');
+  background-repeat:no-repeat;
+  background-position: center;"
+}*/

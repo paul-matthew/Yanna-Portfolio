@@ -65,5 +65,5 @@ video.addEventListener('play', (event) => {
 video.addEventListener('ended', (event) => {
    logo.classList.toggle('logo-animation');
    console.log("AH YO end");
-   setTimeout (function(){video.play();},1000);
+   setTimeout (function(){video.play();},2000);
 });

@@ -11825,8 +11825,8 @@ p {
   height:200px;
   width:200px;
   margin:auto;
-  -webkit-transform:translateZ(-100px) perspective(300px); /*To make spinning object appear 3D*/
-  transform:translateZ(-100px) perspective(300px); /*To make spinning object appear 3D*/
+  -webkit-transform:translateZ(-600px) perspective(300px); /*To make spinning object appear 3D*/
+  transform:translateZ(-600px) perspective(300px); /*To make spinning object appear 3D*/
   transform-style:preserve-3d; /*To fix IOS issue with spinning coin*/
   -webkit-transform-style:preserve-3d; /*To fix IOS issue with spinning coin*/
 

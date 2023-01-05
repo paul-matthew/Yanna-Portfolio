@@ -11824,6 +11824,8 @@ p {
   height:200px;
   width:200px;
   margin:auto;
+  transform:translateZ(100px) perspective(300px); /*To fix IOS issue with spinning coin*/
+  transform-style:preserve-3d; /*To fix IOS issue with spinning coin*/
 }
 
 /*Alternative Code -coin flip on hover*/

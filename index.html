@@ -25,8 +25,8 @@
         gtag('js', new Date());
         gtag('config', 'G-6TJLK2HE01');
     </script>
+    
     <body id="page-top">
-
         <!-- Intro Video-->
         <div class="vidcontainer" style="background-color:rgb(7, 7, 7); ">
             <video autoplay="autoplay" playsinline="playslinline" muted id="introVideo">
@@ -59,8 +59,8 @@
             </div>
         </nav>
         <!-- About Me-->
-        <section class="scrollFade fade-bottom" class="page-section bg-light" id="aboutme">
-            <div class="container">
+        <section id="aboutme" style="background: radial-gradient(circle, rgb(255, 255, 255), rgb(223, 221, 221), rgb(179, 177, 177),rgb(160, 158, 158));">
+            <div class="container scrollFade fade-bottom page-section">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase"><span id="aboutme1"></span>About Me</h2>
                     <h6 class="section-subheading text-muted">Yours.sincerely.yanna</h6>
@@ -90,8 +90,8 @@
             </div>
         </section> 
         <!-- Portfolio-->
-        <section class="scrollFade fade-bottom" class="page-section" id="portfolio" style="background-color:rgb(235, 229, 229)">
-            <div class="container">
+        <section id="portfolio" style="background: radial-gradient(circle, rgb(235, 229, 229), rgb(226, 204, 204), rgb(209, 189, 189), rgb(235, 229, 229));">
+            <div class="container scrollFade fade-bottom page-section">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase"><span id="portfolio1"></span>Portfolio</h2>
                     <h6 class="section-subheading text-muted">XX</h6>
@@ -149,8 +149,8 @@
             </div>
         </section>
         <!-- Fitness Grid-->
-        <section class="scrollFade fade-bottom" class="page-section bg-light" id="fitness">
-            <div class="container">
+        <section id="fitness" style="background: radial-gradient(circle, rgb(255, 255, 255), rgb(223, 221, 221), rgb(179, 177, 177),rgb(160, 158, 158));">
+            <div class="container scrollFade fade-bottom page-section">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase"><span id="fitness1"></span>Fitness</h2>
                     <h6 class="section-subheading text-muted">@TheFitLifeWithYanna</h6>
@@ -186,11 +186,12 @@
                             </div>
                         </div>
                     </div>
+                </div>
             </div>
         </section>
         <!-- Blog Grid-->
-        <section class="scrollFade fade-bottom" class="page-section" id="blog" style="background-color:rgb(235, 229, 229)">
-            <div class="container">
+        <section id="blog" style="background: radial-gradient(circle, rgb(235, 229, 229), rgb(226, 204, 204), rgb(209, 189, 189), rgb(235, 229, 229));">
+            <div class="container scrollFade fade-bottom page-section">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase"><span id="blog1"></span>Blog</h2>
                     <h6 class="section-subheading text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h6>
@@ -230,63 +231,64 @@
             </div>
         </section>   
         <!-- Writings Grid-->
-        <section class="scrollFade fade-bottom"class="page-section bg-light" id="writings">
-                    <div class="container">
-                        <div class="text-center">
-                            <h2 class="section-heading text-uppercase"><span id="writings1"></span>Writing</h2>
-                            <h6 class="section-subheading text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
+        <section id="writings" style="background: radial-gradient(circle, rgb(255, 255, 255), rgb(223, 221, 221), rgb(179, 177, 177),rgb(160, 158, 158));">
+            <div class="container scrollFade fade-bottom page-section">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase"><span id="writings1"></span>Writing</h2>
+                    <h6 class="section-subheading text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
+                </div>
+                <div class="row">
+                    <div class="icon-card col-lg-6 col-sm-6 mb-4">
+                    <!-- Writing item 1-->
+                        <div style="overflow:hidden" class="portfolio-item scrollFade fade-right">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#writingModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i style="color:goldenrod; border-style:solid; background-color: white;" class="fas fa-plus-circle fa-1x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/writing/brokenforapurpose2.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption" style="background-color:goldenrod">
+                                <div class="portfolio-caption-heading"><b>Broken For a Purpose</b></div>
+                                    <div class="portfolio-caption-subheading text-muted">Day Dreams</div>
+                            </div>
                         </div>
-                        <div class="row">
-                            <div class="icon-card col-lg-6 col-sm-6 mb-4">
-                                <!-- Writing item 1-->
-                                <div style="overflow:hidden" class="portfolio-item scrollFade fade-right">
-                                    <a class="portfolio-link" data-bs-toggle="modal" href="#writingModal1">
-                                        <div class="portfolio-hover">
-                                            <div class="portfolio-hover-content"><i style="color:goldenrod; border-style:solid; background-color: white;" class="fas fa-plus-circle fa-1x"></i></div>
-                                        </div>
-                                        <img class="img-fluid" src="assets/img/writing/brokenforapurpose2.jpg" alt="..." />
-                                    </a>
-                                    <div class="portfolio-caption" style="background-color:goldenrod">
-                                        <div class="portfolio-caption-heading"><b>Broken For a Purpose</b></div>
-                                        <div class="portfolio-caption-subheading text-muted">Day Dreams</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="icon-card col-lg-6 col-sm-6 mb-4">
-                                <!-- Writing item 2-->
-                                <div style="overflow:hidden" id="cardalter" class="portfolio-item scrollFade">
-                                    <a class="portfolio-link" data-bs-toggle="modal" href="#writingModal2">
-                                        <div class="portfolio-hover">
-                                            <div class="portfolio-hover-content"><i style="color:goldenrod; border-style:solid; background-color: white;" class="fas fa-plus-circle fa-1x"></i></div>
-                                        </div>
-                                        <img class="img-fluid" src="assets/img/writing/yanna-back2.jpg" alt="..." />
-                                    </a>
-                                    <div class="portfolio-caption" style="background-color:goldenrod">
-                                        <div class="portfolio-caption-heading"><b>Passion</b></div>
-                                        <div class="portfolio-caption-subheading text-muted">xx</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="icon-card col-lg-6 col-sm-6 mb-4">
-                                <!-- Writing item 3-->
-                                <div style="overflow:hidden" class="portfolio-item scrollFade fade-left">
-                                    <a class="portfolio-link" data-bs-toggle="modal" href="#writingModal3">
-                                        <div class="portfolio-hover">
-                                            <div class="portfolio-hover-content"><i style="color:goldenrod; border-style:solid; background-color: white;" class="fas fa-plus-circle fa-1x"></i></div>
-                                        </div>
-                                        <img class="img-fluid" src="assets/img/writing/yanna-cyan.jpg" alt="..." />
-                                    </a>
-                                    <div class="portfolio-caption" style="background-color:goldenrod">
-                                        <div class="portfolio-caption-heading"><b>She knows</b></div>
-                                        <div class="portfolio-caption-subheading text-muted">xx</div>
-                                    </div>
-                                </div>
-                            </div>
                     </div>
+                    <div class="icon-card col-lg-6 col-sm-6 mb-4">
+                        <!-- Writing item 2-->
+                        <div style="overflow:hidden" id="cardalter" class="portfolio-item scrollFade">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#writingModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i style="color:goldenrod; border-style:solid; background-color: white;" class="fas fa-plus-circle fa-1x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/writing/yanna-back2.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption" style="background-color:goldenrod">
+                                <div class="portfolio-caption-heading"><b>Passion</b></div>
+                                    <div class="portfolio-caption-subheading text-muted">xx</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon-card col-lg-6 col-sm-6 mb-4">
+                        <!-- Writing item 3-->
+                        <div style="overflow:hidden" class="portfolio-item scrollFade fade-left">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#writingModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i style="color:goldenrod; border-style:solid; background-color: white;" class="fas fa-plus-circle fa-1x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/writing/yanna-cyan.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption" style="background-color:goldenrod">
+                                <div class="portfolio-caption-heading"><b>She knows</b></div>
+                                    <div class="portfolio-caption-subheading text-muted">xx</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- Upcoming-->
-        <section class="scrollFade fade-bottom"class="page-section bg-white" id="upcoming" style="background-color:rgb(235, 229, 229)">
-            <div class="container">
+        <section id="upcoming" style="background: radial-gradient(circle, rgb(235, 229, 229), rgb(226, 204, 204), rgb(209, 189, 189), rgb(235, 229, 229));">
+            <div class="container scrollFade fade-bottom page-section">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase"><span id="upcoming1"></span>Upcoming Works</h2>
                     <h3 class="section-subheading text-muted">xx</h3>
@@ -366,8 +368,8 @@
             </div>
         </div>
         <!-- Contact-->
-        <section class="page-section" id="contact">
-            <div class="container">
+        <section id="contact">
+            <div class="container page-section">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase"><span id="contact1"></span>Contact Me</h2>
                 </div>
@@ -432,7 +434,7 @@
         <footer class="footer py-4">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-start">Copyright &copy; Yours.sincerely.yanna 2022</div>
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Yours.sincerely.yanna 2023</div>
                     <div class="col-lg-4 my-3 my-lg-0">
                         <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/yours.sincerely.yanna/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/yours.sincerely.yanna" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
@@ -443,7 +445,7 @@
                         <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
                     </div>
                 </div>
-                <div style="padding-top:1rem">Web Design: <a href="https://paul-matthew-portfolio.netlify.app/">Paul Matthew</a>🌺 via Bootstrap</div>
+                <div style="padding-top:1rem">Web Design: <a style="color:blue" href="https://paul-matthew-portfolio.netlify.app/">Paul Matthew</a>🌺 via Bootstrap</div>
             </div>
         </footer>
         

@@ -87,6 +87,8 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow-x:hidden;
+  width:100%;
 }
 
 hr {
@@ -11337,6 +11339,10 @@ p {
   margin-bottom: 4rem;
 }
 
+section{
+  overflow-x:hidden;
+}
+
 @media (min-width: 768px) {
   section {
     padding: 9rem 0;
@@ -11465,7 +11471,7 @@ p {
   1px 25px 35px rgba(16,16,16,0.2),
   1px 30px 60px rgba(16,16,16,0.4);
 }
-@media (max-width: 670px) {
+@media (max-width: 1023px) {
 .logo-animation{
   display:block;
   animation-name:slideIn;
@@ -11493,7 +11499,7 @@ p {
   }
 }
 }
-@media (min-width: 670px) {
+@media (min-width: 1024px) {
   .logo-animation{
     display:block;
     animation-name:slideIn;
@@ -11521,7 +11527,7 @@ p {
 
 
 
-@media (max-width: 670px) {
+@media (max-width: 1023px) {
   .yannatxt {
     position:absolute;
     line-height: 4.5rem;
@@ -11533,16 +11539,16 @@ p {
   }
 }
 
-@media (min-width: 670px) {
+@media (min-width: 1023px) {
 
   .yannatxt {
     line-height: 4.5rem;
     margin-bottom: 4rem;
-    top:300px;
+    top:65vh;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
 
   .yannatxt {
     line-height: 4.5rem;
@@ -11825,7 +11831,7 @@ p {
   border: 0.5rem solid rgba(0, 0, 0, 0.1);
 }
 
-/*AVATAR - FLIP styling*/
+/*AVATAR - FLIP animation*/
 
 
 .flip-card-inner {
@@ -12080,13 +12086,13 @@ section#contact form#contactForm :-ms-input-placeholder {
 /*Video selection depending on size of screen*/
 #introVideo2{display:none;}
 
-@media only screen and (max-width:671px){
+@media only screen and (max-width:1023px){
   #introVideo2{display:block;}
   #introVideo{display:none;}
 }
 
 /* Style the video: 100% width and height to cover the entire window */
-@media (max-width:671px){
+@media (max-width:1023px){
   #introVideo2 {
     right: 0;
     bottom: 0;
@@ -12096,7 +12102,17 @@ section#contact form#contactForm :-ms-input-placeholder {
   }
   }
 
-  @media (min-width:672px){
+@media (max-width:1023px){
+  #introVideo {
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    overflow:hidden;
+    }
+    }
+
+  
+  @media (min-width:1024px){
     #introVideo {
       right: 0;
       bottom: 0;
@@ -12132,6 +12148,10 @@ section#contact form#contactForm :-ms-input-placeholder {
   transform: scale(1.1); /* (150% zoom) */
 }
 
+.icon-card{
+  padding:20px;
+}
+
 .portfolio-item{
   box-shadow: 0 1px 6px rgba(0,0,0,0.12), 0 1px 4px rgba(0,0,0,0.24);
 }
@@ -12145,5 +12165,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 }*/
 
 /*To fix the anchor tag links to take into account the sticky navbar*/
+@media (max-width:991px){
 h2{position:relative;}
 h2 span{position:absolute;top:-320px}
+}

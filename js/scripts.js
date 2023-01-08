@@ -82,7 +82,7 @@ video2.addEventListener('play', (event) => {
     setTimeout (function(){video2.play();},2000);
  });
 
- //Fitness Channel get latest youtube video
+ //Fitness Channel get latest youtube video (based on a specfic playlist)
  const loadVideo = (iframe) => {
     const cid = "UChfhmGTBfBtx1XaIdMf7nvg";
     const channelURL = encodeURIComponent(`https://www.youtube.com/feeds/videos.xml?channel_id=${cid}`)

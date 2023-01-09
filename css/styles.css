@@ -11344,7 +11344,7 @@ section{
 }
 
 section {
-    padding: 2rem 0;
+    padding: 5rem 0;
 }
 
 .btn-xl {
@@ -12019,7 +12019,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 /*STYLE FOR SCROLLFADE*/
 .scrollFade {
-  opacity: 1;
+  opacity: 1; 
   pointer-events: all;
 }
 .scrollFade--hidden {
@@ -12050,7 +12050,7 @@ section#contact form#contactForm :-ms-input-placeholder {
     -webkit-transform: translateY(100px);
     opacity: 0;
   }
-  100% {
+  50% {
     transform: translateY(0);
     -webkit-transform: translateY(0);
     opacity: 1;
@@ -12179,4 +12179,59 @@ h2 span{position:absolute;top:-320px}
   .blogrss-mobile{
     display:none;
     }
+}
+
+/*Header Animation*/
+
+/* block-$ */
+@media (max-width:991px){
+.block-reveal {
+  --t: calc(var(--td) + var(--d));
+  color: transparent;
+  overflow: hidden;
+  animation: revealBlock 0s var(--t) forwards;
+}
+
+.block-reveal::after {
+  content: '';
+  width: 0%;
+  height: 100%;
+  padding-bottom: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--bc);
+  animation: revealingIn var(--td) var(--d) forwards, revealingOut var(--td) var(--t) forwards;
+  animation-delay: 0s, 1s;
+}
+}
+
+/* animations */
+@keyframes revealBlock {
+  100% {
+    color: #0f0f0f;
+  }
+}
+
+@keyframes revealingIn {
+
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes revealingOut {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+
 }

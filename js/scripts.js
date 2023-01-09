@@ -104,3 +104,53 @@ const iframes = document.getElementsByClassName('latestVideoEmbed');
 for (let i = 0, len = iframes.length; i < len; i++) {
     loadVideo(iframes[i]);
 }
+//ON SCREEN CSS delayed until on screen
+
+/*
+const element = document.querySelector('.section-heading');
+const observer = new IntersectionObserver(entries => {
+    console.log("GOTCHA")
+  element.classList.toggle( 'block-reveal', entries[0].isIntersecting );
+
+});
+
+observer.observe( element );
+
+
+*/
+
+const element = document.getElementById('ahyo');    
+const element2 = document.getElementById('ahyo2');
+const element3 = document.getElementById('ahyo3');
+const element4 = document.getElementById('ahyo4');
+const element5 = document.getElementById('ahyo5');
+const element6 = document.getElementById('ahyo6');
+
+const observer = new IntersectionObserver(entries => {
+    console.log("GOTCHA")
+  element.classList.toggle( 'block-reveal', entries[0].isIntersecting );
+  element2.classList.toggle( 'block-reveal', entries[0].isIntersecting );
+  element3.classList.toggle( 'block-reveal', entries[0].isIntersecting );
+  element4.classList.toggle( 'block-reveal', entries[0].isIntersecting );
+  element5.classList.toggle( 'block-reveal', entries[0].isIntersecting );
+  element6.classList.toggle( 'block-reveal', entries[0].isIntersecting );
+
+});
+
+observer.observe( element );
+observer.observe( element2 );
+observer.observe( element3 );
+observer.observe( element4 );
+observer.observe( element5 );
+observer.observe( element6 );
+/*
+const element = document.querySelectorAll('.section-heading');
+
+    const observer = new IntersectionObserver(entries => {
+        for(let i=0; i<element.length;i++){
+            console.log("GOTCHA")
+            element[i].classList.toggle('block-reveal', entries[0].isIntersecting );
+        }
+        });
+    observer.observe(element[i]);
+*/

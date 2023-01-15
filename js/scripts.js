@@ -106,19 +106,6 @@ for (let i = 0, len = iframes.length; i < len; i++) {
 }
 //ON SCREEN CSS delayed until on screen
 
-/*
-const element = document.querySelector('.section-heading');
-const observer = new IntersectionObserver(entries => {
-    console.log("GOTCHA")
-  element.classList.toggle( 'block-reveal', entries[0].isIntersecting );
-
-});
-
-observer.observe( element );
-
-
-*/
-
 const element = document.getElementById('ahyo');    
 const element2 = document.getElementById('ahyo2');
 const element3 = document.getElementById('ahyo3');
@@ -145,14 +132,18 @@ observer.observe( element4 );
 observer.observe( element5 );
 observer.observe( element6 );
 observer.observe( element7 );
-/*
-const element = document.querySelectorAll('.section-heading');
 
-    const observer = new IntersectionObserver(entries => {
-        for(let i=0; i<element.length;i++){
-            console.log("GOTCHA")
-            element[i].classList.toggle('block-reveal', entries[0].isIntersecting );
-        }
-        });
-    observer.observe(element[i]);
-*/
+/*ATTEMPT TO STREAMLINE
+
+const elements = document.querySelectorAll('.section-heading');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry=> {
+    const intersecting = entry.isIntersecting
+  console.log("GOTCHA")
+  entry.target.classList.toggle('block-reveal')
+  })
+});
+
+for (const element of elements){
+observer.observe(element);
+}*/

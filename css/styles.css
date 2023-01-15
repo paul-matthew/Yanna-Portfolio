@@ -12175,12 +12175,12 @@ h2{position:relative;}
 h2 span{position:absolute;top:-320px}
 }
 
-@media (max-width:750px){
+@media (max-width:991px){
   .blogrss-desk{
     display:none;
     }
 }
-@media (min-width:751px){
+@media (min-width:992px){
   .blogrss-mobile{
     display:none;
     }

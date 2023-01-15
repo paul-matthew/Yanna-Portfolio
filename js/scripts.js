@@ -125,6 +125,7 @@ const element3 = document.getElementById('ahyo3');
 const element4 = document.getElementById('ahyo4');
 const element5 = document.getElementById('ahyo5');
 const element6 = document.getElementById('ahyo6');
+const element7 = document.getElementById('ahyo7');
 
 const observer = new IntersectionObserver(entries => {
     console.log("GOTCHA")
@@ -134,7 +135,7 @@ const observer = new IntersectionObserver(entries => {
   element4.classList.toggle( 'block-reveal', entries[0].isIntersecting );
   element5.classList.toggle( 'block-reveal', entries[0].isIntersecting );
   element6.classList.toggle( 'block-reveal', entries[0].isIntersecting );
-
+  element7.classList.toggle( 'block-reveal', entries[0].isIntersecting );
 });
 
 observer.observe( element );
@@ -143,6 +144,7 @@ observer.observe( element3 );
 observer.observe( element4 );
 observer.observe( element5 );
 observer.observe( element6 );
+observer.observe( element7 );
 /*
 const element = document.querySelectorAll('.section-heading');
 

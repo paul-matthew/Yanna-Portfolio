@@ -12040,9 +12040,11 @@ section#contact form#contactForm :-ms-input-placeholder {
 .scrollFade--visible.fade-bottom {
   animation: fade-bottom 1s ease-in;
 }
+
 .scrollFade--visible.fade-left {
   animation: fade-left 1s ease-in;
 }
+
 .scrollFade--visible.fade-right {
   animation: fade-right 1s ease-in;
 }
@@ -12051,36 +12053,36 @@ section#contact form#contactForm :-ms-input-placeholder {
   0% {
     transform: translateY(100px);
     -webkit-transform: translateY(100px);
-    opacity: 0;
+    visibility: hidden;
   }
   50% {
     transform: translateY(0);
     -webkit-transform: translateY(0);
-    opacity: 1;
+    visibility: visible;
   }
 }
 @keyframes fade-left {
   0% {
     transform: translateX(-300px);
     -webkit-transform: translateX(-300px);
-    opacity: 0;
+    visibility: hidden;
   }
   100% {
     transform: translateX(0);
     -webkit-transform:translateX(0);
-    opacity: 1;
+    visibility: visible;
   }
 }
 @keyframes fade-right {
   0% {
     transform: translateX(100px);
     -webkit-transform: translateX(100px);
-    opacity: 0;
+    visibility: hidden;
   }
   100% {
     transform: translateX(0);
     -webkit-transform: translateX(0);
-    opacity: 1;
+    visibility: visible;
   }
 }
 

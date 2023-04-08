@@ -532,16 +532,19 @@ progress {
   position:absolute;
   top:15px;
   right:5px;
+  color:rgb(135, 138, 156);
 }
 }
 
 @media (min-width: 992px) {
   .homebtn{
+    color:rgb(135, 138, 156);
     margin-left:50px;
   }
 }
 .homebtn:hover{
   transform: scale(1.1);
+  color:rgb(135, 138, 156)
 }
 
 .display-4 {
@@ -11396,7 +11399,7 @@ section {
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #ffc800;
+  color: rgb(135, 138, 156);
 }
 
 @media (min-width: 992px) {
@@ -11926,7 +11929,7 @@ section {
 @media (min-width:1200px){
 section#contact {
   background-color: #212529;
-  background-image: url("../assets/img/yanna-banner.jpg");
+  background-image: url("../assets/img/castle.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }

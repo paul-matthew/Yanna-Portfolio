@@ -59,12 +59,10 @@ let logo = document.getElementById("yannatxtid");
 
 video.addEventListener('play', (event) => {
    logo.classList.toggle('logo-animation');
-   console.log("AH YO start")
 });
 
 video.addEventListener('ended', (event) => {
    logo.classList.toggle('logo-animation');
-   console.log("AH YO end");
    setTimeout (function(){video.play();},2000);
 });
 
@@ -73,12 +71,10 @@ let video2 = document.getElementById("introVideo2");
 
 video2.addEventListener('play', (event) => {
     logo.classList.toggle('logo-animation');
-    console.log("AH YO start")
  });
  
  video2.addEventListener('ended', (event) => {
     logo.classList.toggle('logo-animation');
-    console.log("AH YO end");
     setTimeout (function(){video2.play();},2000);
  });
 
@@ -147,3 +143,31 @@ const observer = new IntersectionObserver(entries => {
 for (const element of elements){
 observer.observe(element);
 }*/
+
+//desktop replay button
+var video3 = document.getElementById("introVideo");
+var replayButton3 = document.getElementById("replayButton3");
+
+video3.addEventListener('ended', function() {
+  replayButton3.style.display = "block";
+});
+
+function replayVideo3() {
+  video3.currentTime = 0;
+  video3.play();
+  replayButton3.style.display = "none";
+}
+
+//mobile version replay button
+var video4 = document.getElementById("introVideo2");
+var replayButton4 = document.getElementById("replayButton4");
+
+video4.addEventListener('ended', function() {
+  replayButton4.style.display = "block";
+});
+
+function replayVideo4() {
+  video4.currentTime = 0;
+  video4.play();
+  replayButton4.style.display = "none";
+}

@@ -3966,7 +3966,6 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #ffc800;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -3974,9 +3973,6 @@ textarea.form-control-lg {
   .nav-link {
     transition: none;
   }
-}
-.nav-link:hover, .nav-link:focus {
-  color: #cca000;
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -11843,7 +11839,6 @@ section {
 .flip-card-inner {
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
   height:200px;
   width:200px;
   margin:auto;
@@ -11853,10 +11848,8 @@ section {
   height:200px;
   width:200px;
   margin:auto;
-  -webkit-transform:translateZ(-600px) perspective(300px); /*To make spinning object appear 3D*/
   transform:translateZ(-600px) perspective(300px); /*To make spinning object appear 3D*/
   transform-style:preserve-3d; /*To fix IOS issue with spinning coin*/
-  -webkit-transform-style:preserve-3d; /*To fix IOS issue with spinning coin*/
 
 }
 
@@ -11892,7 +11885,6 @@ section {
 }
 
 .flip-card-front, .flip-card-back {
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 

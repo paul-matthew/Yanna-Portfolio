@@ -28,7 +28,7 @@
     
     <body id="page-top">
         <!-- Intro Video-->
-        <div class="vidcontainer" style="background-color:rgb(7, 7, 7); ">
+        <div class="vidcontainer" style="position:relative; background-color:rgb(7, 7, 7); ">
             <video autoplay="autoplay" playsinline="playslinline" muted id="introVideo">
                 <source src="assets/img/yanna-introz.mp4" type="video/mp4">
             </video>
@@ -36,7 +36,13 @@
                 <source src="assets/img/introvid2.mp4" type="video/mp4">
             </video>
             <!--<div id="yannatxtid" class="yannatxt text-uppercase">YANNA</div>-->
+            <div id="replayButton3" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;">
+                <button style="background-color: #ff6b6b; padding: 10px 20px; border-radius: 5px; font-family: 'Arial', sans-serif; transition: all 0.3s ease-in-out;" onmouseover="this.style.backgroundColor='#ff5e5e'" onmouseout="this.style.backgroundColor='#ff6b6b';" onclick="replayVideo3()">REPLAY</button>            </div>
+            </div>
+            <div id="replayButton4" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;">
+                <button style="background-color: #ff6b6b; padding: 10px 20px; border-radius: 5px; font-family: 'Arial', sans-serif; transition: all 0.3s ease-in-out;" onmouseover="this.style.backgroundColor='#ff5e5e'" onmouseout="this.style.backgroundColor='#ff6b6b';" onclick="replayVideo4()">REPLAY</button>            </div>
         </div>
+
         <!-- Navigation-->
         <nav style="background-color:rgb(7, 7, 7)" class="navbar navbar-expand-lg navbar-dark" id="mainNav">
             <div class="container">

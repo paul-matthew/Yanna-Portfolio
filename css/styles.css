@@ -12183,7 +12183,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 @media(max-width:991px){
   .icon-card{
-    padding:40px;
+    padding:40px;    
   }
   }
 
@@ -12283,4 +12283,8 @@ a.btn.FB:hover{
 a.btn.YT:hover{
   color:red;
   transform: scale(1.5);
+}
+
+.reduce{
+  margin-top: -200px;
 }

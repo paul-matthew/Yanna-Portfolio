@@ -620,12 +620,25 @@ progress {
   content: "— ";
 }
 
+@media(min-width:992px){
 .img-fluid {
   max-width: 100%;
-  width:auto;
+  width:100%;
   height: auto;
-  max-height: 390px;
+  max-height: 150px;
+  object-fit: cover;
 }
+}
+
+@media(max-width:991px){
+  .img-fluid {
+    max-width: 100%;
+    width:100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+  }
+  }
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -692,7 +705,7 @@ progress {
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
-  display: flex;
+  display: flex;  
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--bs-gutter-y));
   margin-right: calc(-0.5 * var(--bs-gutter-x));
@@ -7697,6 +7710,11 @@ textarea.form-control-lg {
   text-align: right !important;
 }
 
+.text-justify {
+  text-align: justify !important;
+  text-justify: inter-word !important;
+}
+
 .text-center {
   text-align: center !important;
 }
@@ -11909,7 +11927,7 @@ section {
   height: 2.75rem;
 }
 
-@media (max-width:1200px){
+@media (max-width:600px){
   section#contact {
     background-color: white;
     background-image: url("../assets/img/yanna-contact.jpg");
@@ -11918,7 +11936,12 @@ section {
   }
   }
 
-@media (min-width:1200px){
+  .space{
+    padding:10px;
+  }
+
+
+@media (min-width:601px){
 section#contact {
   background-color: #212529;
   background-image: url("../assets/img/castle.jpg");
@@ -12081,6 +12104,12 @@ section#contact form#contactForm :-ms-input-placeholder {
   }
 }
 
+#myVideo{
+  height:75%;
+}
+
+
+
 /*STYLE FOR COVER VIDEO*/
 
 /*Video selection depending on size of screen*/
@@ -12147,10 +12176,16 @@ section#contact form#contactForm :-ms-input-placeholder {
 .icon-card img:hover {
   transform: scale(1.1); /* (150% zoom) */
 }
-
+@media(min-width:992px){
 .icon-card{
-  padding:20px;
+  padding:25px;
 }
+}
+@media(max-width:991px){
+  .icon-card{
+    padding:40px;
+  }
+  }
 
 .portfolio-item{
   box-shadow: 0 1px 6px rgba(0,0,0,0.12), 0 1px 4px rgba(0,0,0,0.24);

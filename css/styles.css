@@ -626,7 +626,6 @@ progress {
   content: "— ";
 }
 
-@media(min-width:992px){
 .img-fluid {
   max-width: 100%;
   width:100%;
@@ -634,17 +633,6 @@ progress {
   max-height: 350px;
   object-fit: cover;
 }
-}
-
-@media(max-width:991px){
-  .img-fluid {
-    max-width: 100%;
-    width:100%;
-    height: auto;
-    max-height: 350px;
-    object-fit: cover;
-  }
-  }
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -12176,7 +12164,7 @@ section#contact form#contactForm :-ms-input-placeholder {
     }
 
 /*Style to make the card icons centered*/
-@media (max-width: 1992px){
+@media (max-width: 1991px){
   .portfolio-item{
     /*margin:auto !important;*/
     width:50% !important;

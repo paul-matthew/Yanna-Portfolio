@@ -11908,7 +11908,7 @@ section {
 
 @keyframes coinFlip {
   0% {
-    
+    transform: rotateY(0deg);
   }
   60% {
     transform: rotateY(180deg);

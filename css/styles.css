@@ -631,7 +631,7 @@ progress {
   max-width: 100%;
   width:100%;
   height: auto;
-  max-height: 150px;
+  max-height: 350px;
   object-fit: cover;
 }
 }
@@ -717,7 +717,27 @@ progress {
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
+
 .row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+
+.row2 {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;  
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+.row2 > * {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
@@ -12156,7 +12176,7 @@ section#contact form#contactForm :-ms-input-placeholder {
     }
 
 /*Style to make the card icons centered*/
-@media (max-width: 992px){
+@media (max-width: 1992px){
   .portfolio-item{
     /*margin:auto !important;*/
     width:50% !important;
@@ -12166,11 +12186,10 @@ section#contact form#contactForm :-ms-input-placeholder {
     margin-right:0px;
   }
 }
-@media (min-width: 992px){
+@media (min-width: 1992px){
   .portfolio-item{
     margin:auto !important;
     width:50% !important;
-
   }
 }
 

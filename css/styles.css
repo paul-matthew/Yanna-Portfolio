@@ -11880,8 +11880,8 @@ section {
   height:200px;
   width:200px;
   margin:auto;
-  transform:translateZ(-600px) perspective(300px); /*To make spinning object appear 3D*/
-  transform-style:preserve-3d; /*To fix IOS issue with spinning coin*/
+  /*transform:translateZ(-600px) perspective(300px); /*To make spinning object appear 3D*/
+  /*transform-style:preserve-3d; /*To fix IOS issue with spinning coin*/
 
 }
 

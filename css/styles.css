@@ -12178,8 +12178,8 @@ section#contact form#contactForm :-ms-input-placeholder {
 
     .intro-btn{
       position: absolute;
-      top:90vh;
-      left:30px;
+      top:80vh;
+      left:20px;
       scroll-behavior: smooth;
     }
 

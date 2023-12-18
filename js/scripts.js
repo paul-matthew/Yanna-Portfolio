@@ -111,7 +111,6 @@ const element6 = document.getElementById('ahyo6');
 const element7 = document.getElementById('ahyo7');
 
 const observer = new IntersectionObserver(entries => {
-    console.log("GOTCHA")
   element.classList.toggle( 'block-reveal', entries[0].isIntersecting );
   element2.classList.toggle( 'block-reveal', entries[0].isIntersecting );
   element3.classList.toggle( 'block-reveal', entries[0].isIntersecting );
@@ -158,7 +157,7 @@ async function fetchDatoCMSPosts() {
   
       if (response.ok) {
         const data = await response.json();
-        console.log(data); // Log the entire response to inspect the structure
+        // console.log(data); // Log the entire response to inspect the structure
   
         const posts = data.data.allPosts; // Access the allPosts array
   
@@ -182,7 +181,7 @@ async function fetchDatoCMSPosts() {
   
       // Assuming you have HTML structure for postTitle and postContent
       carouselItem.innerHTML = `
-      <div style="position: relative;margin-top:80px">
+      <div style="position: relative;margin-top:80px;min-height:400px">
         <h3>${post.postTitle}</h3>
         <p style='font-size:15px;color:gray'>${post.date}</p>
         <p style='text-align: justify; margin:10px'>${post.postContent}</p>

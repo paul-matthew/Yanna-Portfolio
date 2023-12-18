@@ -411,58 +411,23 @@
                 <div class="text-center" style="--td: 1.2s; background-color: white;">
                     <h2 id="ahyo7" class="section-heading text-uppercase" style="--bc: #f6f4e7; --d: .1s"><span id="contact1"></span>Contact Me</h2>
                 </div>
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- * * SB Forms Contact Form * *-->
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- This form is pre-integrated with SB Forms.-->
-                <!-- To make this form functional, sign up at-->
-                <!-- https://startbootstrap.com/solution/contact-forms-->
-                <!-- to get an API token!-->
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                    <div class="row align-items-stretch mb-5">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <!-- Name input-->
-                                <input class="form-control" id="name" type="text" placeholder="Name *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <div class="form-group">
-                                <!-- Email address input-->
-                                <input class="form-control" id="email" type="email" placeholder="Email *" data-sb-validations="required,email" />
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <div class="form-group mb-md-0">
-                                <!-- Phone number input-->
-                                <input class="form-control" id="phone" type="tel" placeholder="Phone No. (optional)"/>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group form-group-textarea mb-md-0">
-                                <!-- Message input-->
-                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted-->
-                    <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center text-white mb-3">
-                            <div class="fw-bolder">Message Sent!</div>
-                        </div>
-                    </div>
-                    <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form-->
-                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                    <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-success btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
-                </form>
+                <div id="formkeep-embed" data-formkeep-url="https://formkeep.com/p/9acae40ec33363f68ca54a7fd66d7b74?embedded=1"></div>
+
+                <script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
+                <script type="text/javascript" src="https://formkeep-production-herokuapp-com.global.ssl.fastly.net/formkeep-embed.js"></script>
+                
+                <!-- Get notified when the form is submitted, add your own code below: -->
+                <script>
+                const formkeepEmbed = document.querySelector('#formkeep-embed')
+                
+                formkeepEmbed.addEventListener('formkeep-embed:submitting', _event => {
+                  console.log('Submitting form...')
+                })
+                
+                formkeepEmbed.addEventListener('formkeep-embed:submitted', _event => {
+                  console.log('Submitted form...')
+                })
+                </script>
             </div>
         </section>
         <!-- Footer-->
@@ -476,8 +441,8 @@
                         <a class="btn YT btn-dark btn-social mx-2" href="https://www.youtube.com/@YoursSincerelyYanna" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-youtube"></i></a>
                     </div>
                     <div class="col-lg-4 text-lg-end" style="font-family: Calibri">
-                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                        <a class="link-dark text-decoration-none me-3" href="/privacy.html#privacyPolicy">Privacy Policy</a>
+                        <a class="link-dark text-decoration-none" href="/privacy.html#termsOfUse">Terms of Use</a>
                     </div>
                 </div>
                 <div style="padding-top:1rem; font-family: Calibri;">Web Design: <a style="color:blue;" href="https://pmdaybreak.com">PM Daybreak Designs</a>🌺</div>
@@ -533,7 +498,7 @@
                                     <h2 class="text-uppercase">Fitness Programs</h2>
                                     <p class="item-intro text-muted"><a href="https://www.youtube.com/@TheFitLifeWithYanna" style="color:black">@TheFitLifeWithYanna</a></p>
                                     <img class="img-fluid d-block mx-auto general" src="assets/img/fitness-banner.jpg" alt="..." />
-                                    <p>Check out my exlusive fitness content including programs, and the latest from me!</p>
+                                    <p>Check out my exclusive fitness content including programs, and the latest from me!</p>
                                     <a class="btn btn-success" href="https://ysyanna.wordpress.com/fitness" role="button">Explore Programs</a>
                                     <div style="padding-top:2rem">
                                     </div>
@@ -871,11 +836,6 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
         <script src="js/scrollfade-0.1.js"></script>
     </body>

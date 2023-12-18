@@ -129,17 +129,92 @@ observer.observe( element5 );
 observer.observe( element6 );
 observer.observe( element7 );
 
-/*ATTEMPT TO STREAMLINE
+/*MOTIVATION API (DATOCMS)*/
 
-const elements = document.querySelectorAll('.section-heading');
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry=> {
-    const intersecting = entry.isIntersecting
-  console.log("GOTCHA")
-  entry.target.classList.toggle('block-reveal')
-  })
-});
+async function fetchDatoCMSPosts() {
+    const apiUrl = 'https://graphql.datocms.com/';
+    const apiToken = '838ec5cd226fdd2d7670f9ad5939ab'; // Replace with your actual API token
+  
+    const query = `
+      {
+        allPosts(orderBy: date_DESC) {
+          id
+          postTitle
+          postContent
+          date
+        }
+      }
+    `;
+  
+    try {
+      const response = await fetch(apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${apiToken}`,
+        },
+        body: JSON.stringify({ query }),
+      });
+  
+      if (response.ok) {
+        const data = await response.json();
+        console.log(data); // Log the entire response to inspect the structure
+  
+        const posts = data.data.allPosts; // Access the allPosts array
+  
+        // Call a function to populate the carousel with posts
+        populateCarousel(posts);
+      } else {
+        console.error('Failed to fetch posts from DatoCMS.');
+      }
+    } catch (error) {
+      console.error('Error fetching posts:', error);
+    }
+  }
+  
+  function populateCarousel(posts) {
+    const carouselInner = document.getElementById('carouselInner');
+  
+    // Loop through posts and create carousel items
+    posts.forEach((post, index) => {
+      const carouselItem = document.createElement('div');
+      carouselItem.className = index === 0 ? 'carousel-item active' : 'carousel-item';
+  
+      // Assuming you have HTML structure for postTitle and postContent
+      carouselItem.innerHTML = `
+      <div style="position: relative;margin-top:80px">
+        <h3>${post.postTitle}</h3>
+        <p style='font-size:15px;color:gray'>${post.date}</p>
+        <p style='text-align: justify; margin:10px'>${post.postContent}</p>
+      </div>
+    `;
+  
+      carouselInner.appendChild(carouselItem);
+    });
+  }
+  
+  // Call the function to fetch and populate the carousel
+  fetchDatoCMSPosts();
+  
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    // Initialize the carousel
+    const postCarousel = new bootstrap.Carousel(document.getElementById('postCarousel'), {
+      interval: false, // Set to false to prevent automatic sliding
+    });
 
-for (const element of elements){
-observer.observe(element);
-}*/
+    // Get the previous and next buttons
+    const prevButton = document.querySelector('.carousel-control-prev');
+    const nextButton = document.querySelector('.carousel-control-next');
+
+    // Add event listeners to the buttons
+    prevButton.addEventListener('click', function() {
+      postCarousel.prev(); // Move to the previous slide
+    });
+
+    nextButton.addEventListener('click', function() {
+      postCarousel.next(); // Move to the next slide
+    });
+  });
+
+  

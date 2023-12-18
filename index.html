@@ -16,6 +16,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
     </head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6TJLK2HE01"></script>
@@ -37,6 +38,7 @@
             </video>
             <!--<div id="yannatxtid" class="yannatxt text-uppercase">YANNA</div>-->
         </div>
+        <div id="introbtn-cont"><a href="#yannabio" class="btn btn-success intro-btn section-heading" style='background-color:whitesmoke !important' role="button">EXPLORE</a></div>
 
         <!-- Navigation-->
         <nav style="background-color:rgb(7, 7, 7)" class="navbar navbar-expand-lg navbar-dark" id="mainNav">
@@ -52,7 +54,7 @@
                         <li class="nav-item"><a class="nav-link" href="#fitness1">Fitnesss</a></li>
                         <li class="nav-item"><a class="nav-link" href="#blog1">Vlog</a></li>
                         <li class="nav-item"><a class="nav-link" href="#writings1">Writing</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#upcoming1">Upcoming</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="#upcoming1">Upcoming</a></li> -->
                         <li class="nav-item"><a class="nav-link" href="#contact1">Contact</a></li>
                     </ul>
                 </div>
@@ -60,7 +62,7 @@
             </div>
         </nav>
         <!-- About Me-->
-        <section style="background: white">
+        <section style="background: white"id="yannabio">
             <div class="container scrollFade fade-bottom page-section">
                 <div class="text-center" style="--td: 1.2s">
                     <h2 id="ahyo" class="section-heading text-uppercase" style="--bc: #f6f4e7; --d: .1s"><span id="aboutme1"></span>About Me</h2>
@@ -168,10 +170,12 @@
                     <div class="icon-card col-lg-10 col-sm-12">
                         <div class="row2 d-flex justify-content-between">
                             <!-- Fitness item 1-->
-                            <div style="overflow:hidden"class="portfolio-item scrollFade fade-right"> <!--Overflow:hidden used for the picture hover zoom in effect-->
+                            <div style="overflow:hidden; background-color:#f6f4e7; margin:1px"class="portfolio-item scrollFade fade-up"> <!--Overflow:hidden used for the picture hover zoom in effect-->
                                 <a class="portfolio-link" data-bs-toggle="modal" href="#fitnessModal1">
                                 <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i style="color:grey; border-style:solid; background-color: white;" class="fas fa-plus-circle fa-1x"></i></div>
+                                    <div class="portfolio-hover-content">
+                                        <!-- <i style="color:grey; border-style:solid ; background-color: #f6f4e7;" class="fas fa-plus-circle fa-1x"></i> -->
+                                    </div>
                                 </div>
                                 <img class="img-fluid" src="assets/img/portfolio/yannafit.jpg" alt="..." />
                                 </a>
@@ -183,16 +187,18 @@
                     
                     
                             <!-- Fitness item 2-->
-                            <div style="overflow:hidden" id="cardalter" class="portfolio-item scrollFade fade-left">
+                            <div style="overflow:hidden; background-color:#f6f4e7; margin:1px" id="cardalter" class="portfolio-item scrollFade fade-up">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#fitnessModal2">
                                 <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i style="color:grey; border-style:solid; background-color: white;" class="fas fa-plus-circle fa-1x"></i></div>
+                                    <div class="portfolio-hover-content">
+                                        <!-- <i style="color:grey; border-style:solid; background-color: white;" class="fas fa-plus-circle fa-1x"></i> -->
+                                    </div>
                                 </div>
                                 <img class="img-fluid" src="assets/img/portfolio/cardio2.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption" style="background-color:#f6f4e7">
                                 <div class="portfolio-caption-heading"><b>Fitness Programs</b></div>
-                                <div class="portfolio-caption-subheading">My Home Workout Plans</div>
+                                <div class="portfolio-caption-subheading">My home Workout Plans</div>
                             </div>
                             </div>
                         </div>
@@ -209,11 +215,11 @@
                 <div class="row">
                     <iframe scrolling='no' class="blogrss-desk" width="900" height="600" src="https://rss.app/embed/v1/imageboard/8vcL0wgA4kd9XBx7" frameborder="0"></iframe>
                     <iframe scrolling='no' style='padding:10px' class="blogrss-mobile" width="360" height="440"  src="https://rss.app/embed/v1/carousel/8vcL0wgA4kd9XBx7" frameborder="0"></iframe>
-                    <a class="btn btn-success" style="max-width:40%; margin:auto;" href="https://ysyanna.wordpress.com/" role="button">ALL VLOGS</a>                    
-                    <a class="btn btn-success" style="max-width:40%; margin:auto;" href="https://ysyanna.wordpress.com/blog/?blogsub=confirmed#subscribe-blog" role="button">SUBSCRIBE</a>                    
+                    <a class="btn btn-success" style="max-width:120px; margin:auto;" href="https://ysyanna.wordpress.com/" role="button">ALL VLOGS</a>                    
+                    <a class="btn btn-success" style="max-width:120px; margin:auto;" href="https://ysyanna.wordpress.com/blog/?blogsub=confirmed#subscribe-blog" role="button">SUBSCRIBE</a>                    
                     <!--  
                     <div class="icon-card col-lg-6 col-sm-12 mb-4">
-                        <!-- Blog item 1--''>
+                        <-- Blog item 1--''>
                         <div style="overflow:hidden" class="portfolio-item scrollFade fade-right">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#blogModal1">
                                 <div class="portfolio-hover">
@@ -228,7 +234,7 @@
                         </div>
                     </div>
                     <div class="icon-card col-lg-6 col-sm-12 mb-4">
-                        <!-- Blog item 3--''>
+                        <-- Blog item 3--''>
                         <div style="overflow:hidden" id="cardalter" class="portfolio-item scrollFade fade-left">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#blogModal3">
                                 <div class="portfolio-hover">
@@ -257,10 +263,12 @@
                     <div class="icon-card col-lg-10 col-sm-12">
                         <div class="row2 d-flex justify-content-between">
                             <!-- Writing item 1-->
-                            <div style="overflow:hidden" class="portfolio-item scrollFade fade-right">
+                            <div style="overflow:hidden; background-color:#f6f4e7; margin:1px" class="portfolio-item scrollFade fade-up">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#writingModal1">
                                 <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i style="color:grey; border-style:solid; background-color: white;" class="fas fa-plus-circle fa-1x"></i></div>
+                                    <div class="portfolio-hover-content">
+                                        <!-- <i style="color:grey; border-style:solid; background-color: white;" class="fas fa-plus-circle fa-1x"></i> -->
+                                    </div>
                                 </div>
                                 <img class="img-fluid" src="assets/img/writing/brokenforapurpose2.jpg" alt="..." />
                             </a>
@@ -286,10 +294,12 @@
                         </div> -->
                         
                             <!-- Writing item 3-->
-                            <div style="overflow:hidden" class="portfolio-item scrollFade fade-left">
+                            <div style="overflow:hidden;background-color:#f6f4e7; margin:1px" class="portfolio-item scrollFade fade-up">
                                 <a class="portfolio-link" data-bs-toggle="modal" href="#writingModal3">
                                 <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i style="color:grey; border-style:solid; background-color: white;" class="fas fa-plus-circle fa-1x"></i></div>
+                                    <div class="portfolio-hover-content">
+                                        <!-- <i style="color:grey; border-style:solid; background-color: white;" class="fas fa-plus-circle fa-1x"></i> -->
+                                    </div>
                                 </div>
                                 <img class="img-fluid" src="assets/img/writing/hill.jpg" alt="..." />
                                 </a>
@@ -304,8 +314,37 @@
                 </div>
             </div>
         </section>
-        <!-- Upcoming-->
+        <!-- Motivational Posts-->
         <section id="upcoming" style="background: white">
+            <div class="container scrollFade fade-bottom page-section">
+              <div class="text-center" style="--td: 1.2s">
+                <h2 id="ahyo6" class="section-heading text-uppercase" style="--bc: #f6f4e7; --d: .1s">
+                  <span id="upcoming1"></span>Motivational Posts
+                </h2>
+                <h3 class="section-subheading text-muted">by Ayanna Walker</h3>
+          
+                <!-- Carousel container -->
+                <div id="postCarousel" class="carousel slide general" data-ride="carousel">
+                    <img src="./assets/img/team/avatar3.jpg" alt="Author Image" style="filter: grayscale(100%); width: 60px; height: 60px; border-radius: 50%; position: absolute; top: 5px; left: 5px;" class="general">
+                    <p style="font-weight:bold;font-size:20px; position: absolute; top: 5px; left: 75px;">AYANNA</p>
+                    <p style="color:gray;font-size:10px; position: absolute; top: 30px; left: 75px;">@yours.sincerely.yanna</p>
+                    <div class="carousel-inner" id="carouselInner"></div>
+                    <div style="position: relative;">
+                        <a href="#postCarousel" role="button" data-slide="prev" style="margin-left:10px;color: gray !important; position: absolute; top: 50px; left: 5px; transform: translateY(-50%);">
+                            <span>Previous</span>
+                        </a>
+                        <a href="#postCarousel" role="button" data-slide="next" style="margin-right:10px;color: gray !important;position: absolute; top: 50px; right: 5px; transform: translateY(-50%);">
+                            <span>Next</span>
+                        </a>
+                    </div>
+                </div>
+                                
+                </div>
+              </div>
+            </div>
+          </section>
+        <!-- Upcoming-->
+        <!-- <section id="upcoming" style="background: white">
             <div class="container scrollFade fade-bottom page-section">
                 <div class="text-center" style="--td: 1.2s">
                     <h2 id="ahyo6" class="section-heading text-uppercase" style="--bc: #f6f4e7; --d: .1s"><span id="upcoming1"></span>Upcoming</h2>
@@ -365,7 +404,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!-- Contact-->
         <section id="contact">
             <div class="container scrollFade fade-bottom page-section">
@@ -413,10 +452,7 @@
                     <!-- has successfully submitted-->
                     <div class="d-none" id="submitSuccessMessage">
                         <div class="text-center text-white mb-3">
-                            <div class="fw-bolder">Form submission successful!</div>
-                            To activate this form, sign up at
-                            <br />
-                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                            <div class="fw-bolder">Message Sent!</div>
                         </div>
                     </div>
                     <!-- Submit error message-->
@@ -433,7 +469,7 @@
         <footer class="footer py-4">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-start">Copyright &copy; Yours.sincerely.yanna 2023</div>
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Yours.sincerely.yanna 2024</div>
                     <div class="col-lg-4 my-3 my-lg-0">
                         <a class="btn IG btn-dark btn-social mx-2" href="https://www.instagram.com/yours.sincerely.yanna/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                         <a class="btn FB btn-dark btn-social mx-2" href="https://www.facebook.com/yours.sincerely.yanna" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
@@ -444,7 +480,7 @@
                         <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
                     </div>
                 </div>
-                <div style="padding-top:1rem; font-family: Calibri;">Web Design: <a style="color:blue;" href="https://pmdaybreak.netlify.app/">PM Daybreak Designs</a>🌺 via Bootstrap</div>
+                <div style="padding-top:1rem; font-family: Calibri;">Web Design: <a style="color:blue;" href="https://pmdaybreak.com">PM Daybreak Designs</a>🌺</div>
             </div>
         </footer>
         
@@ -495,9 +531,9 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Fitness Programs</h2>
-                                    <p class="item-intro text-muted">xx</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/fitness-banner.jpg" alt="..." />
-                                    <p>Text xx </p>
+                                    <p class="item-intro text-muted"><a href="https://www.youtube.com/@TheFitLifeWithYanna" style="color:black">@TheFitLifeWithYanna</a></p>
+                                    <img class="img-fluid d-block mx-auto general" src="assets/img/fitness-banner.jpg" alt="..." />
+                                    <p>Check out my exlusive fitness content including programs, and the latest from me!</p>
                                     <a class="btn btn-success" href="https://ysyanna.wordpress.com/fitness" role="button">Explore Programs</a>
                                     <div style="padding-top:2rem">
                                     </div>
@@ -556,16 +592,19 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Fitness Channel</h2>
-                                    <p class="item-intro text-muted">@TheFitLifeWithYanna</p>
+                                    <p class="item-intro text-muted"><a href="https://www.youtube.com/@TheFitLifeWithYanna" style="color:black">@TheFitLifeWithYanna</a></p>
                                     <div class="youtube-cont">
                                         <!--<iframe class='youtubevid' class="latestVideoEmbed" vnum='0' frameborder="0" allowfullscreen></iframe>-->
                                         <!--<iframe class='youtubevid' width="100%" height="100%" src="https://www.youtube.com/embed/D2W6_rSf4ks?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
-                                        <iframe class='youtubevid' src="https://www.youtube.com/embed/videoseries?controls=0&amp;list=PLyxxxohmaDSYl6xr9sLorMcieLxsAOA2z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        <iframe class='youtubevid general' src="https://www.youtube.com/embed/videoseries?controls=0&amp;list=PLyxxxohmaDSYl6xr9sLorMcieLxsAOA2z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                     </div>
                                     <p>Home Workout Playlist</p>
                                     <p>Click below to subscribe</p>
                                     <script src="https://apis.google.com/js/platform.js"></script>
-                                    <div style="display:flex; justify-content:center; align-items:center" class="g-ytsubscribe" data-channelid="UChfhmGTBfBtx1XaIdMf7nvg" data-layout="default" data-count="default" ></div>
+                                    <div style="width:50%; margin: 0 auto;">
+                                        <div style="margin: 0 auto; width:100%" class="g-ytsubscribe" data-channelid="UChfhmGTBfBtx1XaIdMf7nvg" data-layout="default" data-count="default" >
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -752,25 +791,11 @@
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Broken For a Purpose</h2>
                                     <p class="item-intro text-muted">by Ayanna Walker</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/writing/yanna-artist.jpg" alt="..." />
-                                    <p>Everyone encounters obstacles in day to day life, things that can break a person and cripple them mentally, physically and emotionally. This book was written to reach every broken soul struggling to find a purpose to their pain. This is for everyone who needs some motivation, some reassurance that although storms may come and life may fling you from pillar to post, you are fully equipped to weather the storm and become a better person because of it. The author shares her experiences hoping that those experiences will speak to someone who needs to know that every struggle in life happens for a reason. The goal is to use words to resonate in some way in the life of someone who needs to know they are not alone, to know that they are not fighting a losing battle.</p>
+                                    <img class="img-fluid d-block mx-auto general" src="assets/img/writing/yanna-artist.jpg" alt="..." />
+                                    <p style="text-align: justify;">Everyone encounters obstacles in day to day life, things that can break a person and cripple them mentally, physically and emotionally. This book was written to reach every broken soul struggling to find a purpose to their pain. This is for everyone who needs some motivation, some reassurance that although storms may come and life may fling you from pillar to post, you are fully equipped to weather the storm and become a better person because of it.</p>
                                     <div class="col-lg-12 my-3 my-lg-0">
                                         <a class="btn btn-dark btn-social mx-2" href="https://www.amazon.com/BROKEN-PURPOSE-Ayanna-Walker-ebook/dp/B00MI4ZPC4?ref_=ast_sto_dp" aria-label="Amazon"><i class="fab fa-amazon"></i></a>
                                     </div>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Threads
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Illustration
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close
-                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -825,9 +850,9 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">My Writing Posts</h2>
-                                    <p class="item-intro text-muted">xx</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/writing/yanna-chair.jpg" alt="..." />
-                                    <p>xx</p>
+                                    <p class="item-intro text-muted">by Ayanna Walker</p>
+                                    <img class="img-fluid d-block mx-auto general" src="assets/img/writing/yanna-chair.jpg" alt="..." />
+                                    <p style="text-align: justify;">Writing is my passion.  I am grateful to be able to share these pieces of my world with you.</p>
                                     <a class="btn btn-success" href="https://ysyanna.wordpress.com/writing/" role="button">See posts</a>
                                 </div>
                             </div>
@@ -843,6 +868,10 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->

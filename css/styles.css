@@ -538,7 +538,7 @@ progress {
   position:absolute;
   top:15px;
   right:5px;
-  color:rgb(135, 138, 156);
+  color:#f6f4e7;
 }
 }
 
@@ -3141,12 +3141,17 @@ textarea.form-control-lg {
 
 .btn-success {
   color: black;
-  background-color: #b9b8b1;
+  background-color: #f6f4e7;
   border-color: grey;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smoother effect */
 }
+
 .btn-success:hover {
   color: black;
-  background-color: #f6f4e7;
+  background-color: #b9b8b1;
+  transform: scale(1.1); /* Adjust scale for a more gradual effect */
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); /* Adjust box shadow on hover */
   border-color: grey;
 }
 .btn-check:focus + .btn-success, .btn-success:focus {
@@ -12121,6 +12126,13 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 #myVideo{
   height:75%;
+  border:solid black;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.12), 0 1px 4px rgba(0,0,0,0.24);
+}
+
+.general{
+  border:solid black;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.12), 0 1px 4px rgba(0,0,0,0.24);
 }
 
 
@@ -12164,11 +12176,18 @@ section#contact form#contactForm :-ms-input-placeholder {
     }
     }
 
+    .intro-btn{
+      position: absolute;
+      top:90vh;
+      left:30px;
+      scroll-behavior: smooth;
+    }
+
 /*Style to make the card icons centered*/
 @media (max-width: 1991px){
   .portfolio-item{
     /*margin:auto !important;*/
-    width:50% !important;
+    width:48% !important;
   }
   #cardalter{
     margin-left:auto;
@@ -12303,4 +12322,25 @@ a.btn.YT:hover{
 .reduce{
   margin-top: -200px;
 }
+}
+
+/* Motivation carousel */
+
+#postCarousel{
+  min-height:500px;
+  /* margin:0 auto; */
+}
+
+@media(max-width:900px){
+  #postCarousel{
+    max-width:90vw !important;
+    margin:0 auto;
+  }
+}
+
+@media(min-width:900px){
+  #postCarousel{
+    max-width:500px !important;
+    margin:0 auto;
+  }
 }
